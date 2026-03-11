@@ -1,99 +1,86 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const titles = [
-  "JAVA FULLSTACK DEV",
-  "MERN STACK DEV"
-  ];
+  // Register GSAP plugins
+  gsap.registerPlugin(ScrollTrigger);
 
-  const typedElement = document.getElementById("typed");
-  if (!typedElement) return;
+  // Initial loading animation
+  const tl = gsap.timeline();
 
-  let titleIndex = 0;
-  let charIndex = 0;
-  let typing = true;
+  tl.from(".nav-glass", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power4.out"
+  })
+    .from(".hero-content", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power4.out"
+    }, "-=0.5")
+    .from(".hero-badges span", {
+      opacity: 0,
+      scale: 0.8,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "back.out(1.7)"
+    }, "-=0.5");
 
-  function typeEffect() {
-    const currentTitle = titles[titleIndex];
+  // Section reveal animations
+  const sections = document.querySelectorAll(".section");
+  sections.forEach(section => {
+    gsap.from(section.querySelectorAll(".section-title, .summary-card, .comp-card, .project-card, .stats-card, .lang-map, .strategy-item"), {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      y: 30,
+      stagger: 0.15,
+      duration: 1,
+      ease: "power3.out"
+    });
+  });
 
-    if (typing) {
-      typedElement.textContent = currentTitle.slice(0, ++charIndex);
-      if (charIndex === currentTitle.length) {
-        typing = false;
-        setTimeout(typeEffect, 90000);
-      } else {
-        setTimeout(typeEffect, 90000);
-      }
-    } else {
-      typedElement.textContent = currentTitle.slice(0, --charIndex);
-      if (charIndex === 0) {
-        typing = true;
-        titleIndex = (titleIndex + 1) % titles.length;
-        setTimeout(typeEffect, 200);
-      } else {
-        setTimeout(typeEffect, 50);
-      }
-    }
-  }
-
-  typeEffect();
-
-  // Optional: Contact form logic
-  const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
+  // Form Handling
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const name = form.querySelector("input[placeholder='Name']").value.trim();
-      const email = form.querySelector("input[placeholder='Email']").value.trim();
-      const message = form.querySelector("textarea").value.trim();
+      const submitBtn = contactForm.querySelector("button");
+      const originalText = submitBtn.textContent;
 
-      if (name && email && message) {
-        console.log("Contact Form Submitted:", { name, email, message });
-        alert(`Thank you for reaching out, ${name}!`);
-        form.reset();
-      } else {
-        alert("Please fill out all fields.");
-      }
+      // Simulate transmission
+      submitBtn.disabled = true;
+      submitBtn.textContent = "TRANSMITTING...";
+
+      setTimeout(() => {
+        showToast("SECURE COMMUNICATION ESTABLISHED. RESPONSE PENDING.");
+        contactForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }, 1500);
     });
   }
-});
- function showToast(message) {
-    const toast = document.getElementById("toast");
-    toast.textContent = message;
-    toast.classList.remove("toast-hidden");
-    toast.classList.add("toast-show");
 
-    setTimeout(() => {
-      toast.classList.remove("toast-show");
-      toast.classList.add("toast-hidden");
-    }, 4000);
-  }
-
+  // Toast logic
   function showToast(message) {
     const toast = document.getElementById("toast");
     toast.textContent = message;
-    toast.classList.remove("toast-hidden");
     toast.classList.add("toast-show");
 
     setTimeout(() => {
       toast.classList.remove("toast-show");
-      toast.classList.add("toast-hidden");
     }, 5000);
   }
 
-  document.querySelector('.btn[download]').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default download
-
-    const fileUrl = this.getAttribute('href');
-
-    fetch(fileUrl, { method: 'HEAD' })
-      .then(response => {
-        if (response.ok) {
-          // File exists, allow download
-          window.location.href = fileUrl;
-        } else {
-          showToast("⚠️ Resume not found. An updated version with new skills is coming soon. Apologies for the inconvenience.");
-        }
-      })
-      .catch(() => {
-        showToast("⚠️ Resume not found. An updated version with new skills is coming soon. Apologies for the inconvenience.");
-      });
+  // Scroll progress color shift (Optional)
+  window.addEventListener("scroll", () => {
+    const scrolled = window.scrollY;
+    if (scrolled > 50) {
+      document.querySelector(".nav-glass").style.background = "rgba(0, 0, 0, 0.95)";
+    } else {
+      document.querySelector(".nav-glass").style.background = "rgba(0, 0, 0, 0.8)";
+    }
   });
+});
