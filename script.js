@@ -6,45 +6,47 @@ document.addEventListener("DOMContentLoaded", () => {
   const tl = gsap.timeline();
 
   tl.from(".nav-glass", {
-    y: -100,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out"
+    y: -80,
+    duration: 0.8,
+    ease: "power3.out"
   })
     .from(".hero-content", {
-      opacity: 0,
-      y: 50,
+      y: 40,
       duration: 1,
-      ease: "power4.out"
-    }, "-=0.5")
+      ease: "power3.out"
+    }, "-=0.4")
     .from(".hero-badges span", {
-      opacity: 0,
-      scale: 0.8,
-      stagger: 0.2,
-      duration: 0.8,
-      ease: "back.out(1.7)"
-    }, "-=0.5");
+      scale: 0.9,
+      stagger: 0.1,
+      duration: 0.6,
+      ease: "back.out(2)"
+    }, "-=0.6");
 
   // Section reveal animations
   const sections = document.querySelectorAll(".section");
   sections.forEach(section => {
-    const revealItems = section.querySelectorAll(".section-title, .summary-card, .comp-card, .project-card, .stats-card, .lang-map, .strategy-item, .contact-info, .contact-form, .badge-cluster img");
+    // Target the main container or grid items
+    const revealTargets = section.querySelectorAll(".summary-card, .comp-card, .project-card, .stats-card, .lang-map, .strategy-item, .contact-info, .contact-form, .arsenal-group");
 
-    if (revealItems.length > 0) {
-      gsap.from(revealItems, {
+    if (revealTargets.length > 0) {
+      gsap.from(revealTargets, {
         scrollTrigger: {
           trigger: section,
-          start: "top 92%",
+          start: "top 95%",
           toggleActions: "play none none none"
         },
-        opacity: 0,
-        y: 40,
+        y: 20,
         stagger: 0.1,
-        duration: 1,
+        duration: 0.6,
         ease: "power2.out",
         clearProps: "all"
       });
     }
+  });
+
+  // Ensure all triggers are calculated correctly after load
+  window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
   });
 
   // Form Handling
