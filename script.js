@@ -28,18 +28,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Section reveal animations
   const sections = document.querySelectorAll(".section");
   sections.forEach(section => {
-    gsap.from(section.querySelectorAll(".section-title, .summary-card, .comp-card, .project-card, .stats-card, .lang-map, .strategy-item"), {
-      scrollTrigger: {
-        trigger: section,
-        start: "top 80%",
-        toggleActions: "play none none none"
-      },
-      opacity: 0,
-      y: 30,
-      stagger: 0.15,
-      duration: 1,
-      ease: "power3.out"
-    });
+    const revealItems = section.querySelectorAll(".section-title, .summary-card, .comp-card, .project-card, .stats-card, .lang-map, .strategy-item, .contact-info, .contact-form, .badge-cluster img");
+
+    if (revealItems.length > 0) {
+      gsap.from(revealItems, {
+        scrollTrigger: {
+          trigger: section,
+          start: "top 92%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 40,
+        stagger: 0.1,
+        duration: 1,
+        ease: "power2.out",
+        clearProps: "all"
+      });
+    }
   });
 
   // Form Handling
