@@ -158,28 +158,28 @@ My mission is to transform complex security telemetry into tactical intelligence
   </tr>
   <tr>
     <td width="50%">
-      <h3 align="center">🛠️ Kali-CLI: Pentesting Utility Suite</h3>
-      <p align="center"><img src="assets/kali-cli.png" width="100%" alt="Kali CLI" /></p>
+      <h3 align="center">🛠️ Kali-CLI: Advanced Tool Integration</h3>
+      <p align="center"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=300&fit=crop" width="100%" alt="Kali CLI" /></p>
       <p><b>Objective:</b> Expansion module for Kali Linux to optimize professional penetration testing workflows. <b>Concept:</b> Pentesting Utility Engineering. <b>Tech:</b> Bash, Python, Kali OS.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/kali-cli)</b></p>
     </td>
     <td width="50%">
-      <h3 align="center">🌐 DNS Lab: Protocol Security Research</h3>
-      <p align="center"><img src="assets/dns-lab.png" width="100%" alt="DNS Lab" /></p>
-      <p><b>Objective:</b> High-fidelity research environment for simulating and defending against protocol-level threats. <b>Concept:</b> Infrastructure Hardening. <b>Tech:</b> BIND9, Wireshark, Linux.</p>
+      <h3 align="center">🌐 DNS Investigation & Security Lab</h3>
+      <p align="center"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=600&h=300&fit=crop" width="100%" alt="DNS Lab" /></p>
+      <p><b>Objective:</b> Research environment for simulating and defending against DNS protocol threats. <b>Concept:</b> Infrastructure Security & Hardening. <b>Tech:</b> BIND9, Wireshark, Linux.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/dns-lab)</b></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3 align="center">🚀 Redeploy: Secure Pipeline Orchestration</h3>
-      <p align="center"><img src="assets/redeploy.png" width="100%" alt="Redeploy" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=300&fit=crop" width="100%" alt="Redeploy" /></p>
       <p><b>Objective:</b> Automated deployment and rollback engine for secure code lifecycle management. <b>Concept:</b> DevSecOps & CI/CD Security. <b>Tech:</b> Bash, Git, Orchestration.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/Redeploy)</b></p>
     </td>
     <td width="50%">
       <h3 align="center">💬 ChatNet: Secure Socket Architecture</h3>
-      <p align="center"><img src="assets/chatnet.png" width="100%" alt="ChatNet" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop" width="100%" alt="ChatNet" /></p>
       <p><b>Objective:</b> Prototype for peer-to-peer encrypted communication using low-level sockets. <b>Concept:</b> Network Security & Data Encryption. <b>Tech:</b> Java, Sockets, TLS.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chatnet)</b></p>
     </td>
@@ -187,13 +187,13 @@ My mission is to transform complex security telemetry into tactical intelligence
   <tr>
     <td width="50%">
       <h3 align="center">🤖 Chatbot: SEC-Ops Automation Engine</h3>
-      <p align="center"><img src="assets/chatbot.png" width="100%" alt="Chatbot" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1531746790731-6c087fecd05a?w=600&h=300&fit=crop" width="100%" alt="Chatbot" /></p>
       <p><b>Objective:</b> AI-driven bot for streamlining security incident response and task automation. <b>Concept:</b> Operational Intelligence. <b>Tech:</b> Python, NLP, Automation APIs.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chatbot)</b></p>
     </td>
     <td width="50%">
       <h3 align="center">🔑 Chmod-Tool: Linux Permission Hardening</h3>
-      <p align="center"><img src="assets/chmod-tool.png" width="100%" alt="Chmod Tool" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=300&fit=crop" width="100%" alt="Chmod Tool" /></p>
       <p><b>Objective:</b> Utility for granular management of Unix permissions to prevent privilege escalation. <b>Concept:</b> Access Control Hardening. <b>Tech:</b> C, Bash, Linux Kernel.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chmod-tool)</b></p>
     </td>
@@ -201,13 +201,13 @@ My mission is to transform complex security telemetry into tactical intelligence
   <tr>
     <td width="50%">
       <h3 align="center">📈 ProfitPulse: Financial Integrity Analytics</h3>
-      <p align="center"><img src="assets/profitpulse.png" width="100%" alt="ProfitPulse" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop" width="100%" alt="ProfitPulse" /></p>
       <p><b>Objective:</b> Analytical dashboard focusing on data integrity and secure financial reporting. <b>Concept:</b> Secure Business Intelligence. <b>Tech:</b> Python, SQL, Matplotlib.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/ProfitPulse)</b></p>
     </td>
     <td width="50%">
       <h3 align="center">📝 FormEZ: Hardened Input Framework</h3>
-      <p align="center"><img src="assets/formez.png" width="100%" alt="FormEZ" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=300&fit=crop" width="100%" alt="FormEZ" /></p>
       <p><b>Objective:</b> Security-first web form handler designed to mitigate XSS and injection vulnerabilities. <b>Concept:</b> Web Application Hardening. <b>Tech:</b> PHP, HTML5, Web UI.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/FormEZ)</b></p>
     </td>
@@ -215,13 +215,13 @@ My mission is to transform complex security telemetry into tactical intelligence
   <tr>
     <td width="50%">
       <h3 align="center">🧮 WebCalculator: Secure Coding Validation</h3>
-      <p align="center"><img src="assets/webcalculator.png" width="100%" alt="WebCalculator" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1587141744123-683ed3f77a0a?w=600&h=300&fit=crop" width="100%" alt="WebCalculator" /></p>
       <p><b>Objective:</b> Utility demonstrating client-side logic hardening and mathematical security principles. <b>Concept:</b> Operational Logic Integrity. <b>Tech:</b> JavaScript, Tailwind CSS.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/WebCalculator)</b></p>
     </td>
     <td width="50%">
       <h3 align="center">♻️ Waste Management: Secure Logistics System</h3>
-      <p align="center"><img src="assets/waste-management.png" width="100%" alt="Waste Management" /></p>
+      <p align="center"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb0a7a09?w=600&h=300&fit=crop" width="100%" alt="Waste Management" /></p>
       <p><b>Objective:</b> Resource management system with role-based access control and data integrity audits. <b>Concept:</b> System Logic & RBAC. <b>Tech:</b> Java, MySQL, Spring Framework.</p>
       <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/Waste-Management)</b></p>
     </td>
@@ -297,8 +297,8 @@ My mission is to transform complex security telemetry into tactical intelligence
 ## 🎯 MISSION_CRITICAL_STRATEGY (SENIOR_FOCUS)
 - 🔭 **Advanced Pentesting:** Master-level pivoting, Active Directory exploitation, and Kerberos manipulation.
 - 🛠️ **DevSecOps Architecture:** Building automated vulnerability scanners using Python and container-security APIs.
-- 📡 **Perimeter Hardening:** Implementation of Zero-Trust Network Access (ZTNA) and BGP Secure-Routing.
-- 🧠 **Forensics & IR:** Advanced memory and disk forensic analysis targeting stealth malware persistence.
+- 📡 **Hardening:** Implementation of Zero-Trust Network Access (ZTNA) and BGP Secure-Routing.
+- 🧠 **Forensics:** Advanced memory and disk forensic analysis targeting stealth malware persistence.
 
 ---
 
@@ -313,7 +313,7 @@ My mission is to transform complex security telemetry into tactical intelligence
 
 ### ⚡ AGGREGATED SECURITY STATS
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=blood&hide_border=true&count_private=true" />
+<img src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=blood&hide_border=true&count_private=true&v=2" alt="GitHub Stats" />
 </p>
 
 </td>
@@ -321,7 +321,7 @@ My mission is to transform complex security telemetry into tactical intelligence
 <td align="center" width="50%">
 
 ### 🏹 CONTRIBUTION PERSISTENCE
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=blood&hide_border=true" width="450"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=blood&hide_border=true&v=2" width="450" alt="GitHub Streak" />
 
 </td>
 </tr>
@@ -331,7 +331,7 @@ My mission is to transform complex security telemetry into tactical intelligence
 
 ### 🧠 LANGUAGE PROFICIENCY MAP
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=blood&hide_border=true" width="600"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=blood&hide_border=true&v=2" width="600" alt="Top Languages" />
 </p>
 
 </div>
