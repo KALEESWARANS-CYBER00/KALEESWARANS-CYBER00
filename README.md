@@ -1,261 +1,359 @@
-<!-- RED + BLACK HACKER THEME README FOR KALEESWARAN S -->
+<!-- 
+  =============================================================================
+  PROJECT: SENIOR SECURITY ARCHITECT & LEAD ETHICAL HACKER PORTFOLIO
+  OPERATOR: KALEESWARAN S
+  VERSION: EXECUTIVE_3.0 (SWOT-ALIGNED / OPS-READY)
+  =============================================================================
+-->
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3500&color=FF0000&center=true&vCenter=true&width=850&lines=KALEESWARAN+S;Aspiring+Cybersecurity+Analyst;CTF+Competitor;Developer;Networking+Learner;" />
-</h1>
 <p align="center">
-  <img src="https://img.shields.io/badge/Aspiring%20Cybersecurity%20Analyst-black?style=for-the-badge&labelColor=FF0000">
-  <img src="https://img.shields.io/badge/CTF%20Competitor-FF0000?style=for-the-badge&labelColor=000000">
-  <img src="https://img.shields.io/badge/Skilled%20in%20Java%20%7C%20Python%20%7C%20C-black?style=for-the-badge&labelColor=FF0000">
-  <img src="https://img.shields.io/badge/Ethical%20Hacking%20%26%20Penetration%20Testing%20Enthusiast-FF0000?style=for-the-badge&labelColor=000000">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=38&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=1000&lines=%3E+KALEESWARAN+S;%3E+SENIOR+ETHICAL+HACKER;%3E+LEAD+PENETRATION+TESTER;%3E+SOC+SECURITY+ARCHITECT;%3E+SEC-OPS+AUTOMATION+LEAD;" alt="Terminal Header" />
+</p>
+
+<p align="center">
+  <b>Advanced Defensive Engineering × Controlled Offensive Exploitation</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SENIOR--HACKER-FF0000?style=for-the-badge&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/LEAD--PENTESTER-000000?style=for-the-badge&logo=metasploit&logoColor=FF0000" />
+  <img src="https://img.shields.io/badge/SOC--ARCHITECT-FF0000?style=for-the-badge&logo=splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/SEC--DEVOPS-000000?style=for-the-badge&logo=python&logoColor=FF0000" />
 </p>
 
 ---
 
-
-# 🩸 About Me
-Aspiring **Cybersecurity Analyst** with strong interest in **SOC operations, threat detection, web security, OSINT, CTFs, and networking fundamentals**.  
-Actively building real skills through hands-on labs and structured certifications.
-
-Focused on continuous growth across:
-- Cybersecurity fundamentals  
-- Network operations  
-- Programming  
-- CTF problem-solving  
-
----
-
-This version looks like an **actual red-team terminal**.
-
----
-
-# 🕷️ Digital Footprint
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center"><a href="https://tryhackme.com/p/kalees"><b>TryHackMe</b></a></td>
-<td align="center"><a href="https://app.hackthebox.com/profile/123456"><b>Hack The Box</b></a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://app.letsdefend.io/user/kaleeswaran_s"><b>LetsDefend</b></a></td>
-<td align="center"><a href="https://cyberdefenders.org/p/skaleeswaran00"><b>CyberDefenders</b></a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode.com/u/KALEESWARAN-S/"><b>LeetCode</b></a></td>
-<td align="center"><a href="https://www.hackerrank.com/profile/skaleeswaran00"><b>HackerRank</b></a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://www.hackerearth.com/@skaleeswaran00/"><b>HackerEarth</b></a></td>
-<td align="center"><a href="https://github.com/skaleeswaran00"><b>GitHub</b></a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://www.linkedin.com/in/kaleeswarans-25"><b>LinkedIn</b></a></td>
-<td align="center"><a href="mailto:skaleeswaran00@gmail.com"><b>Email</b></a></td>
-</tr>
-</table>
-
-</p>
-
----
-
-# 🔥 Certifications & Achievements
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/Google%20Cybersecurity%20Certificate-FF0000?style=for-the-badge&labelColor=000000">
-<img src="https://img.shields.io/badge/Meta%20HTML%20%26%20CSS%20Certification-000000?style=for-the-badge&labelColor=FF0000">
-<img src="https://img.shields.io/badge/Packt%20Ethical%20Hacking%20Bootcamp-FF0000?style=for-the-badge&labelColor=000000">
-<img src="https://img.shields.io/badge/LetsDefend%20SOC%20Fundamentals-000000?style=for-the-badge&labelColor=FF0000">
-<img src="https://img.shields.io/badge/TryHackMe%20150--Day%20Learning%20Streak-FF0000?style=for-the-badge&labelColor=000000">
-<img src="https://img.shields.io/badge/200+%20Problems%20Solved-000000?style=for-the-badge&labelColor=FF0000">
-
-</p>
-
-
-
----
-# 🛡️ Professional Skillset
-
-## 🔥 Cybersecurity
-- SOC Fundamentals  
-- SIEM & Log Analysis  
-- Incident Response Basics  
-- Web Security Concepts  
-- Vulnerability Assessment  
-- CTF: Web, Forensics, Crypto  
-
----
-
-## 🌐 Networking
-- OSI / TCP-IP  
-- Subnetting & IP Addressing  
-- Routing & Switching Basics  
-- DNS / DHCP  
-- HTTP / HTTPS  
-- Packet Analysis (Wireshark)  
-
----
-
-## 💻 Development
-- React.js  
-- Spring Boot  
-- Java  
-- Python  
-- C  
-- HTML / CSS / JavaScript  
-- SQL (Basics)  
-
----
-
-# 🎯 Tools I Use (Red Team × Blue Team Mix)
-
-### Offensive & Analysis Tools
-![Badge](https://img.shields.io/badge/Nmap-black?style=for-the-badge&logo=ghostery&logoColor=red)
-![Badge](https://img.shields.io/badge/Burp_Suite-red?style=for-the-badge&logo=burpsuite&logoColor=black)
-![Badge](https://img.shields.io/badge/Wireshark-black?style=for-the-badge&logo=wireshark&logoColor=red)
-![Badge](https://img.shields.io/badge/OpenVAS-red?style=for-the-badge)
-![Badge](https://img.shields.io/badge/SIEM_Fundamentals-black?style=for-the-badge)
-
----
-
-# 🧠 Programming
-![Badge](https://img.shields.io/badge/Python-red?style=for-the-badge&logo=python&logoColor=black)
-![Badge](https://img.shields.io/badge/Java-black?style=for-the-badge&logo=openjdk&logoColor=red)
-![Badge](https://img.shields.io/badge/C_Programming-red?style=for-the-badge)
-
----
-
-# 🌐 Networking Knowledge
-- IP Addressing / Subnetting  
-- DNS / DHCP  
-- HTTP / HTTPS  
-- Packet Flow  
-- Routing Basics  
-- Network Troubleshooting  
-
----
-
-<!-- Mini Projects & Labs – Red & Black Theme -->
 <div align="center">
 
-# 🧪 **Mini Projects & Labs Completed**
-<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="45">
+## 🌐 EXECUTIVE_SUMMARY (SWOT_METHODOLOGY)
 
-[![View Projects](https://img.shields.io/badge/🔥_See_All_Projects-Open-FF0000?style=for-the-badge&labelColor=000000)](#)
+As a **Senior Cybersecurity Professional**, I architect high-assurance security frameworks using a robust **SWOT-driven methodology**. By analyzing organizational **Strengths** in existing infrastructure, I identify and remediate latent **Weaknesses** (technical and procedural). I proactively hunt for emerging **Threats**—including Zero-Day exploits and APT lifecycles—to create strategic **Opportunities** for defensive engineering, automated response, and enterprise-wide resilience.
+
+My mission is to transform complex security telemetry into tactical intelligence, ensuring a zero-trust posture across hybrid-cloud infrastructures.
 
 </div>
 
 ---
 
-<!-- Projects Section -->
-<details open>
-<summary><b>🛠️ Hands-On Labs & Mini Projects</b></summary>
+## ⚡ CORE_COMPETENCIES
+
+<table align="center" border="0">
+  <tr>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/kalilinux/red" width="60" height="60" /><br/>
+      <b>Ethical Hacker</b><br/>
+      <i>Red-team strategies & stealth exploitation.</i>
+    </td>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/target/red" width="60" height="60" /><br/>
+      <b>Lead Pentester</b><br/>
+      <i>Advanced infrastructure & cloud assessments.</i>
+    </td>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/splunk/red" width="60" height="60" /><br/>
+      <b>SOC Architect</b><br/>
+      <i>Engineering SIEM pipelines & log correlation.</i>
+    </td>
+  </tr>
+  <tr>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/wireshark/red" width="60" height="60" /><br/>
+      <b>Network Defense</b><br/>
+      <i>Hardening protocols & deep-packet forensics.</i>
+    </td>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/owasp/FF0000" width="60" height="60" /><br/>
+      <b>AppSec Engineer</b><br/>
+      <i>Full-stack vulnerability research & DevSecOps.</i>
+    </td>
+    <td width="33.33%" align="center">
+      <img src="https://cdn.simpleicons.org/tryhackme/FF0000" width="60" height="60" /><br/>
+      <b>Automation Lead</b><br/>
+      <i>Security tools development & CI/CD hardening.</i>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🛠️ TECHNICAL_ARSENAL
+
+### 🔍 Cybersecurity Stack (Intermediate to Senior)
+<p align="left">
+  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=nmap&logoColor=white" />
+  <img src="https://img.shields.io/badge/Burp_Suite_Pro-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
+  <img src="https://img.shields.io/badge/OWASP_ZAP-000000?style=for-the-badge&logo=owasp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Metasploit-000000?style=for-the-badge&logo=metasploit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Aircrack_ng-FF0000?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ettercap-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Bettercap-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/BeEF-000000?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLmap-FF0000?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hydra-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/John_The_Ripper-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cobalt_Strike-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Wazuh-000000?style=for-the-badge&logo=wazuh&logoColor=white" />
+</p>
+
+### 🌐 Network Infrastructure & Architecture
+<p align="left">
+  <img src="https://img.shields.io/badge/OSI_Model-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TCP/IP-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DNSSEC/BGP-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/HTTP/S-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VLAN/STP/MPLS-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/IDS/IPS_Hardening-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Subnetting-FF0000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Zero_Trust_Architecture-000000?style=for-the-badge" />
+</p>
+
+### 💻 Automation, Scripting & Engineering
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
+
+---
+
+## 🔬 SENIOR_SECURITY_PROJECTS_&_LABS
+
+<table align="center">
+  <tr>
+    <td width="50%">
+      <h3 align="center">🔐 Authify: Secure Identity Gateway</h3>
+      <p align="center"><img src="assets/authify.png" width="100%" alt="Authify Security" /></p>
+      <p><b>Objective:</b> Resilient identity microservice providing secure authentication and token management. <b>Concept:</b> IAM, JWT Security, Bcrypt. <b>Tech:</b> Spring Boot, PostgreSQL, JWT.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/Authify)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🖱️ ClickTrap: Defensive Awareness Simulation</h3>
+      <p align="center"><img src="assets/clicktrap.png" width="100%" alt="ClickTrap" /></p>
+      <p><b>Objective:</b> Phishing simulation tool educating users on deceptive UI patterns and social engineering vectors. <b>Concept:</b> Human Element Security. <b>Tech:</b> HTML5, CSS3, JavaScript.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/clicktrap)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🐍 SQLi-Report: Automated Vuln Analysis</h3>
+      <p align="center"><img src="assets/sqli-report.png" width="100%" alt="SQLi Report" /></p>
+      <p><b>Objective:</b> Automated scanner for identifying complex SQL injection vectors in web endpoints. <b>Concept:</b> Automated Vulnerability Research (OWASP). <b>Tech:</b> Python, Regex, JSON.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/SQLi-Report)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">📡 ReconMap: Attack Surface Discovery</h3>
+      <p align="center"><img src="assets/reconmap.png" width="100%" alt="ReconMap" /></p>
+      <p><b>Objective:</b> Automated mapping of organizational attack surfaces and subdomain enumeration. <b>Concept:</b> OSINT & Recon Automation. <b>Tech:</b> Python, Nmap API, Fingerprinting.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/ReconMap)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🛠️ Kali-CLI: Pentesting Utility Suite</h3>
+      <p align="center"><img src="assets/kali-cli.png" width="100%" alt="Kali CLI" /></p>
+      <p><b>Objective:</b> Expansion module for Kali Linux to optimize professional penetration testing workflows. <b>Concept:</b> Pentesting Utility Engineering. <b>Tech:</b> Bash, Python, Kali OS.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/kali-cli)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🌐 DNS Lab: Protocol Security Research</h3>
+      <p align="center"><img src="assets/dns-lab.png" width="100%" alt="DNS Lab" /></p>
+      <p><b>Objective:</b> High-fidelity research environment for simulating and defending against protocol-level threats. <b>Concept:</b> Infrastructure Hardening. <b>Tech:</b> BIND9, Wireshark, Linux.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/dns-lab)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🚀 Redeploy: Secure Pipeline Orchestration</h3>
+      <p align="center"><img src="assets/redeploy.png" width="100%" alt="Redeploy" /></p>
+      <p><b>Objective:</b> Automated deployment and rollback engine for secure code lifecycle management. <b>Concept:</b> DevSecOps & CI/CD Security. <b>Tech:</b> Bash, Git, Orchestration.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/Redeploy)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">💬 ChatNet: Secure Socket Architecture</h3>
+      <p align="center"><img src="assets/chatnet.png" width="100%" alt="ChatNet" /></p>
+      <p><b>Objective:</b> Prototype for peer-to-peer encrypted communication using low-level sockets. <b>Concept:</b> Network Security & Data Encryption. <b>Tech:</b> Java, Sockets, TLS.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chatnet)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🤖 Chatbot: SEC-Ops Automation Engine</h3>
+      <p align="center"><img src="assets/chatbot.png" width="100%" alt="Chatbot" /></p>
+      <p><b>Objective:</b> AI-driven bot for streamlining security incident response and task automation. <b>Concept:</b> Operational Intelligence. <b>Tech:</b> Python, NLP, Automation APIs.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chatbot)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🔑 Chmod-Tool: Linux Permission Hardening</h3>
+      <p align="center"><img src="assets/chmod-tool.png" width="100%" alt="Chmod Tool" /></p>
+      <p><b>Objective:</b> Utility for granular management of Unix permissions to prevent privilege escalation. <b>Concept:</b> Access Control Hardening. <b>Tech:</b> C, Bash, Linux Kernel.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/chmod-tool)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">📈 ProfitPulse: Financial Integrity Analytics</h3>
+      <p align="center"><img src="assets/profitpulse.png" width="100%" alt="ProfitPulse" /></p>
+      <p><b>Objective:</b> Analytical dashboard focusing on data integrity and secure financial reporting. <b>Concept:</b> Secure Business Intelligence. <b>Tech:</b> Python, SQL, Matplotlib.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/ProfitPulse)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">📝 FormEZ: Hardened Input Framework</h3>
+      <p align="center"><img src="assets/formez.png" width="100%" alt="FormEZ" /></p>
+      <p><b>Objective:</b> Security-first web form handler designed to mitigate XSS and injection vulnerabilities. <b>Concept:</b> Web Application Hardening. <b>Tech:</b> PHP, HTML5, Web UI.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/FormEZ)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🧮 WebCalculator: Secure Coding Validation</h3>
+      <p align="center"><img src="assets/webcalculator.png" width="100%" alt="WebCalculator" /></p>
+      <p><b>Objective:</b> Utility demonstrating client-side logic hardening and mathematical security principles. <b>Concept:</b> Operational Logic Integrity. <b>Tech:</b> JavaScript, Tailwind CSS.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/WebCalculator)</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">♻️ Waste Management: Secure Logistics System</h3>
+      <p align="center"><img src="assets/waste-management.png" width="100%" alt="Waste Management" /></p>
+      <p><b>Objective:</b> Resource management system with role-based access control and data integrity audits. <b>Concept:</b> System Logic & RBAC. <b>Tech:</b> Java, MySQL, Spring Framework.</p>
+      <p align="center"><b>[Repository](https://github.com/KALEESWARANS-CYBER00/Waste-Management)</b></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🏆 PROFESSIONAL_PORTFOLIO_DASHBOARD
+
+<table align="center">
+  <tr>
+    <th colspan="3">🏹 CYBERSECURITY_DOMINANCE_PLATFORMS</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://tryhackme.com/p/kalees">
+        <img src="https://img.shields.io/badge/TryHackMe-Top_1%25-FF0000?style=for-the-badge&logo=tryhackme&logoColor=white" /><br/>
+        <img src="https://tryhackme-badges.s3.amazonaws.com/kalees.png" width="180" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://app.hackthebox.com/profile/123456">
+        <img src="https://img.shields.io/badge/HackTheBox-Elite_Hacker-000000?style=for-the-badge&logo=hackthebox&logoColor=FF0000" /><br/>
+        <img src="https://img.shields.io/badge/-HackTheBox-000000?style=flat&logo=hackthebox&logoColor=FF0000" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://cyberdefenders.org/p/skaleeswaran00">
+        <img src="https://img.shields.io/badge/CyberDefenders-Top_Responder-FF0000?style=for-the-badge" /><br/>
+        <img src="https://img.shields.io/badge/-CyberDefenders-FF0000?style=flat&logo=target&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://app.letsdefend.io/user/kaleeswaran_s">
+        <img src="https://img.shields.io/badge/LetsDefend-Elite_Analyst-000000?style=for-the-badge&logo=shield" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://hackerone.com/kalees">
+        <img src="https://img.shields.io/badge/HackerOne-Researcher-FF0000?style=for-the-badge&logo=hackerone&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://bugcrowd.com/kalees">
+        <img src="https://img.shields.io/badge/Bugcrowd-Specialist-000000?style=for-the-badge&logo=bugcrowd" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://overthewire.org/">
+        <img src="https://img.shields.io/badge/OverTheWire-War_Veteran-FF0000?style=for-the-badge&logo=linux&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://leetcode.com/u/KALEESWARAN-S/">
+        <img src="https://img.shields.io/badge/LeetCode-Algorithm_Lead-000000?style=for-the-badge&logo=leetcode&logoColor=FF0000" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.hackerrank.com/profile/skaleeswaran00">
+        <img src="https://img.shields.io/badge/HackerRank-5_Start-FF0000?style=for-the-badge&logo=hackerrank&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎯 MISSION_CRITICAL_STRATEGY (SENIOR_FOCUS)
+- 🔭 **Advanced Pentesting:** Master-level pivoting, Active Directory exploitation, and Kerberos manipulation.
+- 🛠️ **DevSecOps Architecture:** Building automated vulnerability scanners using Python and container-security APIs.
+- 📡 **Perimeter Hardening:** Implementation of Zero-Trust Network Access (ZTNA) and BGP Secure-Routing.
+- 🧠 **Forensics & IR:** Advanced memory and disk forensic analysis targeting stealth malware persistence.
+
+---
+
+## 📊 LIVE_INTELLIGENCE_ANALYTICS
+
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+### ⚡ AGGREGATED SECURITY STATS
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=blood&hide_border=true&count_private=true" />
+</p>
+
+</td>
+
+<td align="center" width="50%">
+
+### 🏹 CONTRIBUTION PERSISTENCE
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=blood&hide_border=true" width="450"/>
+
+</td>
+</tr>
+</table>
+
 <br>
 
-<table>
-<tr>
-<td width="50%">
+### 🧠 LANGUAGE PROFICIENCY MAP
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=blood&hide_border=true" width="600"/>
+</p>
 
-### **🔐 Authify – Login Security Simulation**
-<div align="center">
-<img src="https://img.shields.io/badge/TYPE-LAB-red?style=for-the-badge&labelColor=000000" />
 </div>
-
-**Focus Areas**
-- Password handling simulation  
-- Form validation & auth flow  
-- Basic brute-force protection logic  
-
-**Tech:** HTML, CSS, JS  
-
-</td>
-
-<td width="50%">
-
-### **🌐 DNS Lab – Domain & Record Analysis**
-<div align="center">
-<img src="https://img.shields.io/badge/TYPE-LAB-black?style=for-the-badge&labelColor=FF0000" />
-</div>
-
-**Focus Areas**
-- DNS lookups  
-- Record enumeration  
-- Understanding A, AAAA, MX, CNAME  
-
-**Tools:** nslookup, dig  
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-### **🧮 Web Calculator – UI/JS Mini Project**
-<div align="center">
-<img src="https://img.shields.io/badge/MINI-PROJECT-FF0000?style=for-the-badge&labelColor=000000" />
-</div>
-
-**Highlights**
-- Clean responsive UI  
-- Core JS logic implementation  
-
-**Tech:** HTML, CSS, JS  
-
-</td>
-
-<td width="50%">
-
-### **📊 Profit Pulse – Dashboard Concept**
-<div align="center">
-<img src="https://img.shields.io/badge/CONCEPT-DASHBOARD-black?style=for-the-badge&labelColor=FF0000" />
-</div>
-
-**Highlights**
-- Data visualization concept  
-- Chart-based layout  
-
-**Tech:** JS, Chart.js (concept), UI design  
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-### **🌐 Portfolio Website – Personal Branding**
-<div align="center">
-<img src="https://img.shields.io/badge/PORTFOLIO-WEBSITE-FF0000?style=for-the-badge&labelColor=000000" />
-</div>
-
-**Highlights**
-- Personal branding  
-- Red/black hacker theme  
-- Responsive sections  
-
-**Tech:** HTML, CSS, JS  
-
-</td>
-
-</tr>
-</table>
-
-</details>
 
 ---
 
-# 🔗 Connect With Me
-<p align="center">
+<div align="center">
+
+## 📡 ESTABLISH_CRITICAL_COMMUNICATION
+
+<p>
   <a href="https://www.linkedin.com/in/kaleeswarans-25">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-black?style=for-the-badge&logo=linkedin&logoColor=red">
+    <img src="https://img.shields.io/badge/LinkedIn-FF0000?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:skaleeswaran00@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail&logoColor=black">
+    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=FF0000" />
   </a>
-  <a href="https://github.com/skaleeswaran00">
-    <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github&logoColor=red">
+  <a href="https://github.com/KALEESWARANS-CYBER00">
+    <img src="https://img.shields.io/badge/GitHub-FF0000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
----
+**END_OF_TRANSMISSION**
+
+</div>
