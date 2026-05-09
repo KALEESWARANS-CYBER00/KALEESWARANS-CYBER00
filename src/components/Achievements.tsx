@@ -112,14 +112,6 @@ export default function Achievements() {
                     }}
                     className="flex justify-center"
                   >
-                    <img 
-                      src="https://assets.leetcode.com/static_assets/public/images/badges/2024/100-days-2024.png" 
-                      alt="LeetCode 100 Days Badge" 
-                      className="h-20 w-20 object-contain"
-                      onError={(e) => {
-                         (e.target as HTMLImageElement).src = 'https://assets.leetcode.com/static_assets/public/images/badges/50-days-2024.png';
-                      }}
-                    />
                   </motion.div>
                 </div>
               )}
