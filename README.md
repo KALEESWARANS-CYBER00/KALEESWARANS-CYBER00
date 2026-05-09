@@ -7,7 +7,7 @@
 -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=38&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=1000&lines=%3E+KALEESWARAN+S;%3E+SENIOR+ETHICAL+HACKER;%3E+LEAD+PENETRATION+TESTER;%3E+SOC+SECURITY+ARCHITECT;%3E+SEC-OPS+AUTOMATION+LEAD;" alt="Terminal Header" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=38&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=1000&lines=%3E+KALEESWARAN+S;%3E+ETHICAL+HACKER;%3E+PENETRATION+TESTER;%3E+SOC+SECURITY+ARCHITECT;%3E+SEC-OPS+AUTOMATION+LEAD;" alt="Terminal Header" />
 </p>
 
 <p align="center">
