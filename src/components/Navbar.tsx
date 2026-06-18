@@ -34,15 +34,15 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-2"
         >
-          <div className="w-10 h-10 bg-cyber-green/10 rounded-lg flex items-center justify-center border border-cyber-green/20">
-            <Shield className="text-cyber-green w-6 h-6" />
-          </div>
-          <span className="font-bold text-xl tracking-tight hidden sm:block">
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-to-br from-orange-400 to-red-400 border border-red-500/20 shadow-sm">
+
+            <img src="/hacking.png" alt="logo" className="h-6 w-6" /></div>
+          <span className="splash-gradient font-bold text-xl tracking-tight hidden sm:block">
             KALEESWARAN<span className="text-cyber-green">.S</span>
           </span>
         </motion.div>
@@ -56,7 +56,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="text-sm font-medium text-gray-400 hover:text-cyber-green transition-colors font-mono"
+              className="splash-gradient text-sm font-medium font-mono hover:text-cyber-green transition-colors"
             >
 
               {link.name}
@@ -108,8 +108,8 @@ export default function Navbar() {
               ))}
               <a
                 href="/KALEESWARAN_S-RESUME.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full text-center py-3 border border-cyber-green text-cyber-green rounded-md font-mono"
               >
                 Resume
