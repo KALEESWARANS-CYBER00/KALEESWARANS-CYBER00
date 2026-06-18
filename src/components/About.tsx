@@ -13,10 +13,10 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 relative">
+    <section id="about" className="py-24 px-6 relative about-bg">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader 
-          title="About Me" 
+        <SectionHeader
+          title="About Me"
           subtitle="A dedicated cybersecurity professional with a passion for understanding the intricacies of digital defense and offense."
         />
 
@@ -52,26 +52,31 @@ export default function About() {
             </div>
           </motion.div>
 
+          {/* Cinematic Avatar Display (Matching Hero) */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.85, y: 30 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
-            className="hidden lg:block"
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className="hidden lg:block relative mt-12 lg:mt-0 w-full max-w-[480px] mx-auto"
           >
-            <div className="sticky top-32">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyber-green to-cyber-cyan rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative bg-dark-bg p-2 rounded-2xl border border-white/10 overflow-hidden aspect-square flex items-center justify-center">
-                   <div className="w-full h-full bg-cyber-green/5 flex items-center justify-center rounded-xl overflow-hidden">
-                      <img 
-                        src="https://assets.leetcode.com/static_assets/others/lg2550.png" 
-                        alt="KALEESWARAN S" 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                      />
-                   </div>
-                </div>
-              </div>
+            {/* Avatar Glass Card */}
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-[0_0_80px_rgba(6,182,212,0.15)] border border-white/10 group bg-slate-900/40 backdrop-blur-lg">
+
+              <img
+                src="/avatar.png"
+                alt="Kaleeswaran S - Cybersecurity Analyst"
+                className="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
+              />
+
+              {/* Tech overlays over the image */}
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent opacity-80" />
+              <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl"></div>
             </div>
+
+            {/* External decorative accents */}
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyber-cyan/20 rounded-full blur-[80px]" />
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-cyber-green/10 rounded-full blur-[80px]" />
           </motion.div>
         </div>
       </div>
