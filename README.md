@@ -32,8 +32,8 @@ Experienced in building secure web applications, conducting vulnerability assess
 - 🛡️ Focused on OWASP Top 10, secure coding, and Secure SDLC
 - 🚀 Building security tools and production-ready applications
 - 🧠 Interested in threat detection, incident response, and application security
-- 🏆 114+ Day TryHackMe Streak
-- 🎯 280+ Security and Programming Challenges Solved
+- 🏆 136+ Day TryHackMe Streak
+- 🎯 288+ Security and Programming Challenges Solved
 
 ---
 
