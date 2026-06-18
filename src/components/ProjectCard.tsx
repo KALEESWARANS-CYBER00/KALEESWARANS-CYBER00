@@ -9,10 +9,16 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   link?: string;
-  github?: string;
+  github?: string; // can be full URL or repo name
   image?: string;
   index: number;
 }
+
+// Helper to normalize GitHub URLs
+const getGitHubUrl = (github?: string) => {
+  if (!github) return undefined;
+  return github.startsWith('http') ? github : `https://github.com/${github}`;
+};
 
 export default function ProjectCard({ 
   title, 
@@ -48,7 +54,7 @@ export default function ProjectCard({
           </h3>
           <div className="flex gap-4">
             {github && (
-              <a href={github} className="text-gray-400 hover:text-white" target="_blank">
+              <a href={getGitHubUrl(github)} className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Github size={20} />
               </a>
             )}
