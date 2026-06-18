@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-gray-600 text-xs font-mono">
             <span>Powered by</span>
             <Terminal className="text-cyber-green w-4 h-4" />
-            <span>Next.js & Tailwind</span>
+            <span>KALEESWARAN S</span>
           </div>
         </div>
       </div>
