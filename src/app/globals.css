@@ -1,49 +1,153 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyber-green: #10b981;
-  --color-cyber-cyan: #06b6d4;
-  --color-dark-bg: #030712;
-  --color-card-bg: #0f172a;
-  
+  --color-cyber-green: #f59e0b;
+  /* Amber/Gold for cinematic feel */
+  --color-cyber-cyan: #c70000;
+  /* Teal/Cyan */
+  --color-dark-bg: #09090b;
+  /* Very dark cinematic black */
+  --color-card-bg: #18181b;
+  /* Dark cinematic gray */
+  --color-font: #ffffff;
+  /* White for font */
+
   --animate-terminal: terminal-cursor 1s infinite;
-  
+
   @keyframes terminal-cursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
   }
 }
 
 :root {
-  --background: #030712;
-  --foreground: #f9fafb;
-  --cyber-green: #10b981;
-  --cyber-cyan: #06b6d4;
+  --background: #09090b;
+  --foreground: #f8fafc;
+  --cyber-green: #f59e0b;
+  --cyber-cyan: #c70000;
+  --font-color: var(--color-font);
 }
 
-html, body {
-  background-color: #030712 !important;
-  color: #f9fafb;
+html,
+body {
+  /* Animated gradient background */
+  background: linear-gradient(-45deg, var(--color-dark-bg), #0a0a1a, var(--color-cyber-cyan), var(--color-cyber-green));
+  background-size: 400% 400%;
+  animation: bgGradient 30s ease infinite;
+  color: var(--font-color);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
-* {
-  scroll-behavior: smooth;
+@keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.glow-text {
-  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+.bg1 {
+  /* Animated gradient background for section */
+  background: linear-gradient(-45deg, var(--color-dark-bg), var(--color-cyber-green), var(--color-cyber-cyan));
+  background-size: 400% 400%;
+  animation: bg1Anim 20s ease infinite;
+  min-height: 100vh;
 }
 
-.glow-border {
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+.bg3 {
+  /* Different animated gradient for another section */
+  background: linear-gradient(-45deg, var(--color-dark-bg), #1a1a2e, var(--color-cyber-cyan), var(--color-cyber-green));
+  background-size: 400% 400%;
+  animation: bg3Anim 25s ease infinite;
+  min-height: 100vh;
 }
+
+@keyframes bg1Anim {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bg3Anim {
+  0% {
+    background-position: 100% 0%;
+  }
+
+  50% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
 
 .terminal-cursor::after {
   content: '|';
   animation: var(--animate-terminal);
 }
 
+.about-bg {
+  
+  background: linear-gradient(to top, rgb(0, 0, 0), #f59e0b66);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Global text color */
+body,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li {
+  color: var(--font-color);
+}
+
+.splash-gradient {
+  background: linear-gradient(
+    135deg,
+    #fbbf24 0%,
+    #f59e0b 30%,
+    #f97316 65%,
+    #c70000 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
