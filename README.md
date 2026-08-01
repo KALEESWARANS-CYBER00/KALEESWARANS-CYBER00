@@ -1,7 +1,4 @@
 <!-- BANNER IMAGE -->
-<p align="center">
-  <img src="./image.png" alt="Kaleeswaran S - Cybersecurity & Software Engineering Portfolio Banner" width="100%" />
-</p>
 
 <!-- HERO SECTION -->
 <div align="center">
