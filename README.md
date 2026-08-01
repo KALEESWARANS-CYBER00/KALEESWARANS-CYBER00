@@ -1,195 +1,213 @@
-# KALEESWARAN S | CYBERSECURITY ENGINEER & SECURE SOFTWARE DEVELOPER
-
+<!-- BANNER IMAGE -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&color=10B981&center=true&vCenter=true&width=1000&lines=%3E+APPLICATION+SECURITY;%3E+VULNERABILITY+ASSESSMENT;%3E+SECURITY+AUTOMATION;" alt="Terminal Header" />
+  <img src="./image.png" alt="Kaleeswaran S - Cybersecurity & Software Engineering Portfolio Banner" width="100%" />
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/kaleeswarans25/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:kaleeswaran.bcy24@rathinam.in">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
+<!-- HERO SECTION -->
+<div align="center">
+
+ 
+  # Kaleeswaran S
+  ### **Ethical Hacker • Penetration Tester • Full-Stack Developer • Security Researcher**
+
+  <p align="center">
+    <em>"Building secure systems through offensive security and software engineering."</em>
+  </p>
+
+  <!-- ONE TYPING ANIMATION ONLY -->
   <a href="https://github.com/KALEESWARANS-CYBER00">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=17&pause=1200&color=22C55E&center=true&vCenter=true&width=750&lines=Ethical+Hacking+%26+Penetration+Testing;Security+Automation+%26+Tooling;Full-Stack+Security+Engineering;Active+Directory+Adversary+Emulation" alt="Typing Tagline" />
   </a>
-  <a href="https://tryhackme.com/p/YOUR_USERNAME">
-    <img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=red" />
-  </a>
-</p>
+
+  <br /><br />
+
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=KALEESWARANS-CYBER00&style=flat-square&color=22c55e" alt="Profile Views" />
+    &nbsp;
+    <img src="https://img.shields.io/github/followers/KALEESWARANS-CYBER00?style=flat-square&color=06b6d4&label=Followers" alt="Followers" />
+  </p>
+
+</div>
 
 ---
 
-## 🔐 ABOUT ME
+## 👨‍💻 ABOUT ME
 
-Cybersecurity-focused Full Stack Developer with expertise in application security, network security, secure software development, and security automation.
+I am an **Ethical Hacker**, **Penetration Tester**, and **Full-Stack Developer** focused on discovering vulnerabilities and engineering secure systems. By combining offensive penetration testing techniques with full-stack software development, I build tools and architectures that withstand real-world attacks.
 
-Currently pursuing a **B.Sc. in Computer Science with Cybersecurity** at **Rathinam Global Deemed to be University** (CGPA: **8.53**).
-
-Experienced in building secure web applications, conducting vulnerability assessments, analyzing network traffic, and developing security-focused tools.
-
-- 🛡️ Focused on OWASP Top 10, secure coding, and Secure SDLC
-- 🚀 Building security tools and production-ready applications
-- 🧠 Interested in threat detection, incident response, and application security
-- 🏆 136+ Day TryHackMe Streak
-- 🎯 288+ Security and Programming Challenges Solved
+- **Specialization:** Web application penetration testing, security automation, API security, and Active Directory attack paths.
+- **Currently Learning:** Cloud security architecture (AWS/Azure) and advanced adversary emulation techniques.
+- **Long-Term Goal:** To become a lead Application Security Engineer / Red Team Specialist, developing enterprise-grade security tools and conducting high-impact vulnerability research.
 
 ---
 
-## 📊 GITHUB METRICS
+## 🛠️ CORE EXPERTISE
+
+| Area | Skills | Tools |
+| :--- | :--- | :--- |
+| **Web Security** | OWASP Top 10, REST/GraphQL API testing, Auth Bypass | Burp Suite Pro, FFUF, OWASP ZAP, Postman |
+| **Penetration Testing** | Vulnerability scanning, Manual exploitation, PrivEsc | Nmap, Metasploit, LinPEAS, WinPEAS |
+| **Security Automation** | Asynchronous fuzzing, Recon pipelines, Log parsing | Python (Asyncio), Bash, Go, Docker |
+| **Active Directory** | Kerberoasting, DCSync, Domain Escalation, GPO abuse | BloodHound, Mimikatz, Impacket, Rubeus |
+| **Full-Stack Development**| Secure REST APIs, Responsive UI, DB design | Next.js, React, Node.js, TypeScript, PostgreSQL |
+| **Cloud Security** | CSPM basics, IAM policy auditing, Container security | AWS, Azure, Docker, Terraform |
+
+---
+
+## 🏆 FEATURED PROJECTS
+
+### 1. `security-automation` — PentestFlow Recon Command Center
+- **One-line Description:** An event-driven security orchestration dashboard for automated attack surface reconnaissance.
+- **Problem Solved:** Replaces slow manual reconnaissance across multi-domain target scopes with automated asset indexing.
+- **Technologies Used:** Python (Asyncio), Go, TypeScript, Next.js, Spring Boot, WebSockets, Docker.
+- **Key Results:** Reduced initial target discovery time by 75% while cataloging 5,000+ domain assets automatically.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/security-automation](https://github.com/KALEESWARANS-CYBER00/security-automation)
+
+---
+
+### 2. `web-security-toolkit` — VulnRadar API Vulnerability Scanner
+- **One-line Description:** A modular Python vulnerability assessment engine tailored for REST and GraphQL APIs.
+- **Problem Solved:** Minimizes false positives from generic commercial scanners by applying AST code analysis and custom payload suites.
+- **Technologies Used:** Python, Burp Suite API, Docker, PostgreSQL, React, OpenAPI Specs.
+- **Key Results:** Identified SQLi, Stored XSS, and BOLA flaws across 20+ staging environments with under 3% false positives.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/web-security-toolkit](https://github.com/KALEESWARANS-CYBER00/web-security-toolkit)
+
+---
+
+### 3. `red-team-labs` — Active Directory Adversary Emulation Lab
+- **One-line Description:** An IaC automated enterprise network environment for simulating Windows Active Directory attack chains.
+- **Problem Solved:** Provides a safe, multi-domain lab to test Kerberos attacks, GPO abuse, and SIEM detection rules.
+- **Technologies Used:** Windows Server 2022, Terraform, BloodHound, Mimikatz, Impacket, Security Onion.
+- **Key Results:** Documented domain escalation paths from standard domain user to Domain Admin with associated SIEM detection signatures.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/red-team-labs](https://github.com/KALEESWARANS-CYBER00/red-team-labs)
+
+---
+
+### 4. `secure-auth-api` — Zero-Trust Identity Gateway
+- **One-line Description:** A standalone microservice authentication gateway incorporating zero-trust access control.
+- **Problem Solved:** Defends authentication endpoints against token replay, algorithm switching, and credential stuffing attacks.
+- **Technologies Used:** Node.js, TypeScript, Redis, PostgreSQL, Docker, Jest, OAuth 2.0 / OIDC.
+- **Key Results:** Delivered sub-15ms authentication latency while enforcing RS256 token rotation and Redis session revocation.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/secure-auth-api](https://github.com/KALEESWARANS-CYBER00/secure-auth-api)
+
+---
+
+### 5. `ctf-writeups` — CTF Solutions & Exploitation Notes
+- **One-line Description:** Structured vulnerability write-ups and technical walkthroughs for CTF machines.
+- **Problem Solved:** Documents reproducible exploit chains and mitigation strategies for learning and audit references.
+- **Technologies Used:** Markdown, Python, Burp Suite, Ghidra, GDB, PwnTools.
+- **Key Results:** Published 50+ challenge write-ups detailing Linux/Windows privilege escalation and web vulnerabilities.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/ctf-writeups](https://github.com/KALEESWARANS-CYBER00/ctf-writeups)
+
+---
+
+### 6. `cyber-portfolio` — Cybersecurity Portfolio Website
+- **One-line Description:** An interactive dark-themed web portfolio showcasing projects and security metrics.
+- **Problem Solved:** Offers hiring managers an interactive visual platform to review projects, code, and live metrics.
+- **Technologies Used:** React, Next.js, TypeScript, TailwindCSS, Vercel.
+- **Key Results:** Achieved 100/100 Lighthouse performance scores and dynamic project rendering.
+- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/cyber-portfolio](https://github.com/KALEESWARANS-CYBER00/cyber-portfolio)
+
+---
+
+## 🧪 LABS & CTF
+
+| Platform / Lab | Skills Learned | Tools Used | Documentation Link |
+| :--- | :--- | :--- | :--- |
+| **Hack The Box** | Web exploitation, Linux & Windows PrivEsc, Buffer Overflows | Burp Suite, Nmap, Metasploit, GDB | [HTB Notes](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
+| **TryHackMe** | Offensive security paths, Network pentesting, Cyber defense | Wireshark, Gobuster, FFUF, Hydra | [THM Notes](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
+| **PicoCTF** | Cryptography analysis, Forensics, Reverse engineering | Ghidra, CyberChef, PwnTools | [PicoCTF Writeups](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
+| **Home Labs** | SIEM log analysis, Enterprise SOC simulation, Firewalls | Security Onion, PfSense, Proxmox | [Home Lab Docs](https://github.com/KALEESWARANS-CYBER00/red-team-labs) |
+| **Active Directory Labs** | Kerberoasting, DCSync, Trust exploitation, BloodHound mapping | BloodHound, Mimikatz, Rubeus | [AD Lab Docs](https://github.com/KALEESWARANS-CYBER00/red-team-labs) |
+
+---
+
+## 💻 TECH STACK
+
+<table width="100%">
+  <tr>
+    <td width="25%"><strong>Programming</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=python,js,ts,java,c,bash" /></td>
+  </tr>
+  <tr>
+    <td><strong>Security Tools</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=linux,kali,docker,bash" /></td>
+  </tr>
+  <tr>
+    <td><strong>Frameworks</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express" /></td>
+  </tr>
+  <tr>
+    <td><strong>Databases</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis" /></td>
+  </tr>
+  <tr>
+    <td><strong>DevOps</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=docker,git,githubactions" /></td>
+  </tr>
+  <tr>
+    <td><strong>Operating Systems</strong></td>
+    <td><img src="https://skillicons.dev/icons?i=linux,ubuntu,debian,windows" /></td>
+  </tr>
+</table>
+
+---
+
+## 📊 GITHUB STATS
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=blood&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=radical&hide_border=true" width="48%" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  &nbsp;
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=radical&hide_border=true" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
 </p>
 
 ---
 
-## 🚀 FEATURED PROJECTS
+## 📜 ACHIEVEMENTS & MILESTONES
 
-### 🛡️ RedAlert EDR
-
-Offline Endpoint Detection & Response platform for monitoring processes, network activity, and system events with real-time threat detection.
-
-**Tech Stack:** Python • Linux • System Monitoring • Threat Detection
-
----
-
-### 🔐 Authify
-
-Secure authentication platform featuring OTP-based login, email verification, and REST API integration.
-
-**Tech Stack:** React • Spring Boot • JWT • REST APIs
-
----
-
-### 🧪 SQLi-Report
-
-CLI-based SQL injection assessment tool with automated reporting and vulnerability analysis capabilities.
-
-**Tech Stack:** Python • CLI • Web Security
-
----
-
-### 🌐 DNS Lab
-
-Dockerized environment for DNS resolution, caching, protocol testing, and network troubleshooting.
-
-**Tech Stack:** Docker • Linux • Networking
-
----
-
-## 🛠️ CYBERSECURITY TOOLKIT
-
-### 🌐 Network Security & Analysis
-
-![Nmap](https://img.shields.io/badge/Nmap-00457C?style=for-the-badge)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![tcpdump](https://img.shields.io/badge/tcpdump-000000?style=for-the-badge)
-![Netcat](https://img.shields.io/badge/Netcat-4B5563?style=for-the-badge)
-![DNS](https://img.shields.io/badge/DNS-1E40AF?style=for-the-badge)
-![HTTP](https://img.shields.io/badge/HTTP%2FHTTPS-2563EB?style=for-the-badge)
-
-### 🕸️ Web Application Security
-
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-F47C20?style=for-the-badge&logo=burpsuite&logoColor=white)
-![OWASP](https://img.shields.io/badge/OWASP_Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-0F172A?style=for-the-badge)
-
-### 🖥️ Endpoint & System Security
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows_Security-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-00599C?style=for-the-badge)
-![Sysmon](https://img.shields.io/badge/Sysmon-2563EB?style=for-the-badge)
-![EDR](https://img.shields.io/badge/EDR-DC2626?style=for-the-badge)
-
-### 📊 Security Operations
-
-![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=for-the-badge)
-![Log Analysis](https://img.shields.io/badge/Log_Analysis-1D4ED8?style=for-the-badge)
-![Incident Response](https://img.shields.io/badge/Incident_Response-B91C1C?style=for-the-badge)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-A855F7?style=for-the-badge)
-
-### ☁️ Cloud & DevSecOps
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-### 💻 Programming & Automation
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge)
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Spring_Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-
----
-
-## 🎓 CERTIFICATIONS
-
-- Google Cybersecurity Certificate
-- Linux Foundation – Linux Tools
-- Packt – Web Security & Ethical Hacking
-- AWS Fundamentals (Whizlabs)
-- TryHackMe – Pre Security
+- 🛠️ **[X]+ Security & Software Projects** built and open-sourced.
+- 🧪 **[Y]+ Enterprise Security Labs** deployed and documented.
+- 📖 **[Z]+ CTF Machine Write-ups** published.
+- 📜 **Security Certifications:** eJPT (Junior Penetration Tester), Security+ in preparation.
+- 🤝 **Open-Source Contributions:** Active maintainer of cybersecurity tools and automation scripts.
 
 ---
 
 ## 🎯 CURRENT FOCUS
 
-- Application Security & Secure SDLC
-- Threat Detection & Incident Response
-- Security Automation with Python & Bash
-- Network Traffic Analysis
-- Vulnerability Assessment & Remediation
-- Cloud Security Fundamentals
+- ☁️ **Learning Cloud Security:** AWS & Azure security posture management and IAM policy auditing.
+- ⚙️ **Building Security Tools:** Developing custom Python and Go network recon tools.
+- 🏰 **Practicing Active Directory:** Practicing advanced domain trust escalation attack chains.
+- 🚩 **Solving CTFs:** Consistently solving web and privilege escalation challenges on Hack The Box and TryHackMe.
 
 ---
 
-## 📚 AREAS OF INTEREST
-
-- Application Security
-- Security Engineering
-- SOC Operations
-- Vulnerability Management
-- Incident Response
-- Threat Hunting
-- Ethical Hacking
-- Capture The Flag (CTF)
-
----
-
-## 📈 2026 GOALS
-
-- Build advanced security automation tools
-- Contribute to open-source cybersecurity projects
-- Complete more hands-on labs and CTF challenges
-- Expand expertise in cloud security and DevSecOps
-- Earn advanced cybersecurity certifications
-
----
-
-## 📡 CONNECT
+## 🤝 CONNECT
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kaleeswarans25/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <a href="https://linkedin.com/in/KALEESWARANS-CYBER00" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:kaleeswaran.bcy24@rathinam.in">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  &nbsp;&nbsp;
+  <a href="https://tryhackme.com/p/KALEESWARANS-CYBER00" target="_blank">
+    <img src="https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=white" alt="TryHackMe" />
   </a>
-  <a href="https://github.com/KALEESWARANS-CYBER00">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  &nbsp;&nbsp;
+  <a href="https://www.hackthebox.com/profile/KALEESWARANS-CYBER00" target="_blank">
+    <img src="https://img.shields.io/badge/Hack_The_Box-9FEF00?style=flat-square&logo=hackthebox&logoColor=black" alt="Hack The Box" />
   </a>
+  &nbsp;&nbsp;
+  <a href="mailto:kaleeswaran.cybersecurity@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <sub>Designed & Developed by <b>Kaleeswaran S</b> (@KALEESWARANS-CYBER00)</sub>
 </p>
