@@ -119,34 +119,104 @@ I am an **Ethical Hacker**, **Penetration Tester**, and **Full-Stack Developer**
 
 ---
 
-## 💻 TECH STACK
+# 🛠️ Tech Stack
 
-<table width="100%">
-  <tr>
-    <td width="25%"><strong>Programming</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=python,js,ts,java,c,bash" /></td>
-  </tr>
-  <tr>
-    <td><strong>Security Tools</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=linux,kali,docker,bash" /></td>
-  </tr>
-  <tr>
-    <td><strong>Frameworks</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express" /></td>
-  </tr>
-  <tr>
-    <td><strong>Databases</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis" /></td>
-  </tr>
-  <tr>
-    <td><strong>DevOps</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=docker,git,githubactions" /></td>
-  </tr>
-  <tr>
-    <td><strong>Operating Systems</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=linux,ubuntu,debian,windows" /></td>
-  </tr>
-</table>
+## 💻 Languages
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,php,bash,powershell&perline=8" />
+</p>
+
+## 🌐 Full-Stack Development
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,vue,nodejs,express,fastapi,django,spring&perline=8" />
+</p>
+
+## 🗄️ Databases
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,elasticsearch,firebase&perline=8" />
+</p>
+
+## 🌐 Networking & Systems
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,windows,bash,powershell&perline=8" />
+</p>
+
+## ⚔️ Offensive Security
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=linux,kali,bash,powershell&perline=8" />
+</p>
+
+**Security Tools**
+
+`Nmap` · `Burp Suite` · `Metasploit` · `Wireshark` · `Nuclei` · `ffuf` ·
+`Gobuster` · `SQLmap` · `Hydra` · `Hashcat` · `John the Ripper` ·
+`Impacket` · `NetExec` · `Responder` · `BloodHound` · `Amass` · `Subfinder`
+
+## 🔴 Red Teaming
+
+`Active Directory` · `Kerberos` · `NTLM` · `LDAP` · `SMB` · `BloodHound` ·
+`Impacket` · `NetExec` · `PowerShell` · `C2` · `OPSEC` · `MITRE ATT&CK`
+
+## 💀 Exploit Development
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=c,python,assembly,gdb&perline=8" />
+</p>
+
+`x86` · `x64` · `ARM` · `GDB` · `Ghidra` · `pwndbg` · `pwntools` ·
+`WinDbg` · `Buffer Overflow` · `Heap Exploitation` · `Fuzzing`
+
+## 🔬 Reverse Engineering
+
+`Ghidra` · `GDB` · `WinDbg` · `Assembly` · `x86/x64` · `PE` · `ELF` ·
+`Static Analysis` · `Dynamic Analysis` · `Disassembly` · `Decompilation`
+
+## ☁️ Cloud
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=aws&perline=8" />
+</p>
+
+`AWS IAM` · `EC2` · `S3` · `VPC` · `Lambda` · `CloudTrail` ·
+`CloudWatch` · `KMS` · `Secrets Manager`
+
+## 🐳 DevOps / DevSecOps
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,nginx&perline=8" />
+</p>
+
+`GitHub Actions` · `GitLab CI/CD` · `Nginx` · `CI/CD` ·
+`SAST` · `DAST` · `SCA` · `Container Security`
+
+## 📊 Security Operations
+
+`SIEM` · `SOC` · `EDR` · `XDR` · `IDS/IPS` · `Splunk` · `Wazuh` ·
+`Suricata` · `Sysmon` · `YARA` · `Sigma`
+
+## 🔐 Cryptography
+
+`AES` · `RSA` · `MD5` · `SHA-1` · `SHA-2` · `SHA-3` · `TLS/SSL` ·
+`PKI` · `Hashing` · `HMAC` · `Digital Signatures`
+
+## 🧪 Security Research
+
+`CVE Research` · `Vulnerability Research` · `PoC Development` ·
+`Fuzzing` · `Reverse Engineering` · `Malware Analysis` ·
+`Patch Diffing` · `Root Cause Analysis` · `OSINT`
+
+## 🏴‍☠️ Platforms
+
+`Hack The Box` · `TryHackMe` · `PortSwigger Web Security Academy` ·
+`OverTheWire` · `PicoCTF` · `CTFtime` · `VulnHub` · `Proving Grounds`
+
+
+
 
 ---
 
@@ -208,3 +278,284 @@ I am an **Ethical Hacker**, **Penetration Tester**, and **Full-Stack Developer**
 <p align="center">
   <sub>Designed & Developed by <b>Kaleeswaran S</b> (@KALEESWARANS-CYBER00)</sub>
 </p>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
+
+
+# 🛠️ Tech Stack
+
+<table width="100%">
+
+  <tr>
+    <td width="25%"><strong>💻 Programming & Scripting</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,php,bash,powershell&perline=8" />
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🌐 Frontend</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,vue,bootstrap,vite&perline=8" />
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>⚙️ Backend</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django,spring&perline=8" />
+      <br><br>
+      <code>REST API</code> · <code>WebSockets</code> · <code>Microservices</code> ·
+      <code>Authentication</code> · <code>Authorization</code> · <code>OAuth 2.0</code> · <code>JWT</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🗄️ Databases</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=postgres,mysql,mariadb,mongodb,redis,elasticsearch,firebase&perline=8" />
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🌐 Networking</strong></td>
+    <td>
+      <code>OSI</code> · <code>TCP/IP</code> · <code>IPv4</code> · <code>IPv6</code> ·
+      <code>Subnetting</code> · <code>CIDR</code> · <code>VLAN</code> · <code>ARP</code> ·
+      <code>ICMP</code> · <code>TCP</code> · <code>UDP</code> · <code>DNS</code> ·
+      <code>DHCP</code> · <code>HTTP</code> · <code>HTTPS</code> · <code>TLS/SSL</code> ·
+      <code>SSH</code> · <code>FTP/SFTP</code> · <code>SMTP</code> · <code>SNMP</code> ·
+      <code>LDAP</code> · <code>SMB</code> · <code>Kerberos</code> · <code>Routing</code> ·
+      <code>NAT</code> · <code>Firewalls</code> · <code>VPN</code> · <code>Proxy</code> ·
+      <code>Network Segmentation</code>
+      <br><br>
+      <code>Wireshark</code> · <code>tcpdump</code> · <code>Nmap</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🛡️ Cybersecurity Fundamentals</strong></td>
+    <td>
+      <code>CIA Triad</code> · <code>Threat Modeling</code> · <code>Risk Assessment</code> ·
+      <code>Vulnerability Management</code> · <code>Security Architecture</code> ·
+      <code>Identity & Access Management</code> · <code>Authentication</code> ·
+      <code>Authorization</code> · <code>Cryptography</code> · <code>Hashing</code> ·
+      <code>PKI</code> · <code>Digital Signatures</code> · <code>Certificates</code> ·
+      <code>Secrets Management</code> · <code>Security Logging</code> ·
+      <code>Incident Response</code> · <code>Digital Forensics</code> ·
+      <code>Malware Analysis</code> · <code>Security Monitoring</code> ·
+      <code>MITRE ATT&CK</code> · <code>Cyber Kill Chain</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🌐 Web Application Security</strong></td>
+    <td>
+      <code>OWASP Top 10</code> · <code>SQL Injection</code> ·
+      <code>Cross-Site Scripting</code> · <code>CSRF</code> · <code>SSRF</code> ·
+      <code>IDOR</code> · <code>BOLA</code> · <code>Command Injection</code> ·
+      <code>SSTI</code> · <code>XXE</code> · <code>Path Traversal</code> ·
+      <code>File Inclusion</code> · <code>File Upload</code> ·
+      <code>Authentication Bypass</code> · <code>Authorization Bypass</code> ·
+      <code>Session Attacks</code> · <code>JWT Attacks</code> · <code>OAuth Security</code> ·
+      <code>CORS</code> · <code>HTTP Request Smuggling</code> ·
+      <code>HTTP Response Splitting</code> · <code>Prototype Pollution</code> ·
+      <code>Race Conditions</code> · <code>Business Logic</code> ·
+      <code>API Security</code> · <code>GraphQL Security</code> ·
+      <code>WebSocket Security</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>⚔️ Penetration Testing</strong></td>
+    <td>
+      <code>Passive Recon</code> · <code>Active Recon</code> · <code>OSINT</code> ·
+      <code>Subdomain Enumeration</code> · <code>DNS Enumeration</code> ·
+      <code>Port Scanning</code> · <code>Service Enumeration</code> ·
+      <code>Technology Fingerprinting</code> · <code>Attack Surface Mapping</code>
+      <br><br>
+      <code>Nmap</code> · <code>Masscan</code> · <code>Amass</code> · <code>Subfinder</code> ·
+      <code>httpx</code> · <code>Gobuster</code> · <code>ffuf</code> ·
+      <code>Feroxbuster</code> · <code>Nikto</code> · <code>Nuclei</code> ·
+      <code>WhatWeb</code> · <code>Burp Suite</code> · <code>Metasploit</code> ·
+      <code>SQLmap</code> · <code>Netcat</code> · <code>Responder</code> ·
+      <code>Impacket</code> · <code>NetExec</code> · <code>CrackMapExec</code> ·
+      <code>Hydra</code> · <code>Hashcat</code> · <code>John the Ripper</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🔴 Red Teaming</strong></td>
+    <td>
+      <code>Reconnaissance</code> · <code>Initial Access</code> · <code>Execution</code> ·
+      <code>Persistence</code> · <code>Privilege Escalation</code> ·
+      <code>Defense Evasion</code> · <code>Credential Access</code> ·
+      <code>Discovery</code> · <code>Lateral Movement</code> · <code>Collection</code> ·
+      <code>Command & Control</code> · <code>Exfiltration</code>
+      <br><br>
+      <code>Active Directory Fundamentals</code> · <code>Domain Enumeration</code> ·
+      <code>SMB</code> · <code>Credential Dumping</code> · <code>BloodHound</code>
+      <br><br>
+      <code>C2 Architecture</code> · <code>C2 Infrastructure</code> ·
+      <code>Payload Development</code> · <code>HTTP/HTTPS C2</code> · <code>Metasploit</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🐧 Linux Security</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,bash&perline=8" />
+      <br><br>
+      <code>Linux Fundamentals</code> · <code>Linux Administration</code> ·
+      <code>Linux Internals</code> · <code>Processes</code> · <code>Permissions</code> ·
+      <code>File Systems</code> · <code>Users & Groups</code> · <code>Services</code> ·
+      <code>Cron Jobs</code> · <code>Systemd</code> · <code>Environment Variables</code> ·
+      <code>SSH</code> · <code>Sudo</code> · <code>Capabilities</code> ·
+      <code>SUID/SGID</code> · <code>Linux Privilege Escalation</code> ·
+      <code>Bash Scripting</code> · <code>Kernel Fundamentals</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🪟 Windows Security</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=windows,powershell&perline=8" />
+      <br><br>
+      <code>Windows Fundamentals</code> · <code>Windows Administration</code> ·
+      <code>Windows Internals</code> · <code>PowerShell</code> · <code>CMD</code> ·
+      <code>Registry</code> · <code>Services</code> · <code>Scheduled Tasks</code> ·
+      <code>Windows Event Logs</code> · <code>Sysmon</code> · <code>WMI</code> ·
+      <code>WinRM</code> · <code>Windows Privilege Escalation</code> ·
+      <code>DLL Concepts</code> · <code>PE Format</code> · <code>LSASS</code> · <code>DPAPI</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>💀 Exploit Development</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=c,cpp&perline=8" />
+      <br><br>
+      <code>Assembly</code> · <code>x86</code> · <code>x64</code> · <code>ARM</code> ·
+      <code>Buffer Overflow</code> · <code>Stack Overflow</code> ·
+      <code>Heap Exploitation</code> · <code>Fuzzing</code>
+      <br><br>
+      <code>GDB</code> · <code>Ghidra</code> · <code>pwndbg</code> ·
+      <code>pwntools</code> · <code>WinDbg</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🔬 Reverse Engineering</strong></td>
+    <td>
+      <code>Static Analysis</code> · <code>Dynamic Analysis</code> ·
+      <code>Disassembly</code> · <code>Decompilation</code> · <code>Debugging</code> ·
+      <code>Binary Analysis</code> · <code>Malware Analysis</code> ·
+      <code>ELF Analysis</code> · <code>PE Analysis</code> · <code>Assembly</code> ·
+      <code>Function Analysis</code> · <code>Control Flow</code> ·
+      <code>API Analysis</code> · <code>String Analysis</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>☁️ Cloud Security</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=aws&perline=8" />
+      <br><br>
+      <code>IAM</code> · <code>EC2</code> · <code>S3</code> · <code>VPC</code> ·
+      <code>Lambda</code> · <code>CloudTrail</code> · <code>CloudWatch</code> ·
+      <code>KMS</code> · <code>Secrets Manager</code> · <code>Cloud IAM</code> ·
+      <code>Cloud Networking</code> · <code>Container Security</code> ·
+      <code>Serverless Security</code> · <code>Cloud Misconfigurations</code> ·
+      <code>CSPM</code> · <code>Cloud Incident Response</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🐳 DevOps / DevSecOps</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,nginx&perline=8" />
+      <br><br>
+      <code>GitHub Actions</code> · <code>GitLab CI/CD</code> ·
+      <code>Nginx</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>📊 Blue Team / Detection</strong></td>
+    <td>
+      <code>SIEM</code> · <code>SOC Fundamentals</code> · <code>Log Analysis</code> ·
+      <code>Threat Hunting</code> · <code>EDR</code> · <code>XDR</code> ·
+      <code>IDS</code> · <code>IPS</code> · <code>Splunk</code> · <code>Wazuh</code> ·
+      <code>Suricata</code> · <code>Sysmon</code> · <code>YARA</code> · <code>Sigma</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🔐 Cryptography</strong></td>
+    <td>
+      <code>Encoding vs Encryption</code> · <code>Hashing</code> · <code>MD5</code> ·
+      <code>SHA-1</code> · <code>SHA-2</code> · <code>SHA-3</code> · <code>AES</code> ·
+      <code>DES/3DES</code> · <code>RSA</code> · <code>TLS</code> ·
+      <code>Key Management</code> · <code>Password Hashing</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🧪 Security Research</strong></td>
+    <td>
+      <code>CVE Research</code> · <code>Vulnerability Research</code> ·
+      <code>Proof of Concept Development</code> · <code>Fuzzing</code> ·
+      <code>Static Analysis</code> · <code>Dynamic Analysis</code> ·
+      <code>Reverse Engineering</code> · <code>Root Cause Analysis</code> ·
+      <code>Patch Diffing</code> · <code>Exploit Mitigation Analysis</code> ·
+      <code>Malware Analysis</code> · <code>Threat Intelligence</code> · <code>OSINT</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🖥️ Operating Systems</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,windows,apple,android&perline=8" />
+      <br><br>
+      <code>Virtualization</code> · <code>VMware</code> · <code>VirtualBox</code> · <code>Hyper-V</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>🧰 Security Labs & Platforms</strong></td>
+    <td>
+      <code>Hack The Box</code> · <code>TryHackMe</code> ·
+      <code>PortSwigger Web Security Academy</code> · <code>OverTheWire</code> ·
+      <code>PicoCTF</code> · <code>CTFtime</code> · <code>VulnHub</code> ·
+      <code>Proving Grounds</code>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>📚 Security Methodologies</strong></td>
+    <td>
+      <code>OWASP</code> · <code>MITRE ATT&CK</code> · <code>PTES</code> ·
+      <code>NIST</code> · <code>CIS Controls</code> · <code>Cyber Kill Chain</code> ·
+      <code>Threat Modeling</code> · <code>STRIDE</code> · <code>CVSS</code> ·
+      <code>CWE</code> · <code>CVE</code>
+    </td>
+  </tr>
+
+</table>
+
+ -->
