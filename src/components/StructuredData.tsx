@@ -1,5 +1,5 @@
 export default function StructuredData() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kaleeswaran.me';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kaleeswaran-tech.vercel.app';
 
   const jsonLd = {
     '@context': 'https://schema.org',
