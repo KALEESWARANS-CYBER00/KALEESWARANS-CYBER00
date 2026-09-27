@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from './SectionHeader';
-import { Award, CheckCircle2, ChevronDown, ExternalLink } from 'lucide-react';
+import { Award, ChevronDown } from 'lucide-react';
 
 const allCertifications = [
   { 
@@ -43,7 +43,7 @@ const allCertifications = [
     id: 'OAJVN0RJEBSJ' 
   },
   { 
-    name: 'Google Cybersecurity Certificate', 
+    name: 'Google Cybersecurity Professional Certificate', 
     issuer: 'Google', 
     date: 'Jun 2025', 
     id: 'P34KOVQ3ZEWA' 
@@ -110,32 +110,33 @@ export default function Certifications() {
   const row3 = allCertifications.slice(12);
 
   return (
-    <section id="certifications" className="py-24 relative overflow-hidden bg-card-bg/10">
-      <div className="max-w-7xl mx-auto px-6 mb-16">
+    <section id="certifications" className="py-28 relative overflow-hidden bg-[#0b0c0e] border-t border-[#c59b6d]/10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-14">
         <SectionHeader 
-          title="Certifications" 
-          subtitle="Validated technical expertise across cybersecurity, cloud, and modern development."
+          badge="Credentials & Validation"
+          title="Certifications & Accreditations" 
+          subtitle="Industry-verified technical competencies spanning offensive security, cloud architecture, and secure software engineering."
         />
       </div>
 
-      <div className="space-y-8 relative py-4">
-        {/* Decorative Gradients */}
-        <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-dark-bg to-transparent z-10" />
-        <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-dark-bg to-transparent z-10" />
+      <div className="space-y-6 relative py-4">
+        {/* Soft studio side fades */}
+        <div className="absolute inset-y-0 left-0 w-36 bg-gradient-to-r from-[#0b0c0e] to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-36 bg-gradient-to-l from-[#0b0c0e] to-transparent z-10 pointer-events-none" />
 
         <MarqueeRow items={row1} direction="left" speed={45} />
         <MarqueeRow items={row2} direction="right" speed={55} />
         <MarqueeRow items={row3} direction="left" speed={50} />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-16 flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-6 mt-14 flex flex-col items-center">
         {!showAll ? (
           <button 
             onClick={() => setShowAll(true)}
-            className="group flex items-center gap-2 px-8 py-4 bg-cyber-green/10 border border-cyber-green/30 text-cyber-green rounded-xl font-bold hover:bg-cyber-green hover:text-dark-bg transition-all"
+            className="group flex items-center gap-2 px-8 py-3.5 bg-[#141211] border border-[#c59b6d]/30 text-[#dfb88e] rounded-xl font-mono text-xs uppercase tracking-widest hover:bg-[#c59b6d] hover:text-[#0b0c0e] transition-all duration-300"
           >
             Show All Credentials
-            <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+            <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
           </button>
         ) : (
           <motion.div 
@@ -147,27 +148,27 @@ export default function Certifications() {
               {allCertifications.map((cert, idx) => (
                 <div 
                   key={idx}
-                  className="p-6 rounded-2xl bg-card-bg/30 border border-white/5 hover:border-cyber-green/30 transition-all flex flex-col gap-4"
+                  className="p-6 rounded-2xl bg-[#141211]/80 border border-[#c59b6d]/20 hover:border-[#c59b6d]/50 transition-all flex flex-col gap-4"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-cyber-green/10 rounded-lg flex items-center justify-center shrink-0">
-                      <Award className="text-cyber-green w-6 h-6" />
+                    <div className="w-12 h-12 bg-[#c59b6d]/10 rounded-xl flex items-center justify-center shrink-0 border border-[#c59b6d]/20">
+                      <Award className="text-[#c59b6d] w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white leading-tight">{cert.name}</h4>
-                      <p className="text-xs text-gray-500 font-mono mt-1">{cert.issuer}</p>
+                      <h4 className="font-light text-[#f7f4ee] leading-snug">{cert.name}</h4>
+                      <p className="text-xs text-[#a8a29e] font-mono mt-1">{cert.issuer}</p>
                     </div>
                   </div>
                   
                   <div className="pt-4 border-t border-white/5 flex flex-col gap-2">
                     <div className="flex justify-between items-center text-[10px] font-mono">
-                      <span className="text-gray-500">ISSUED:</span>
-                      <span className="text-gray-300">{cert.date?.toUpperCase()}</span>
+                      <span className="text-[#a8a29e]">ISSUED:</span>
+                      <span className="text-[#d5cec5]">{cert.date?.toUpperCase()}</span>
                     </div>
                     {cert.id && (
                       <div className="flex justify-between items-center text-[10px] font-mono">
-                        <span className="text-gray-500">CREDENTIAL ID:</span>
-                        <span className="text-cyber-green/70">{cert.id}</span>
+                        <span className="text-[#a8a29e]">CREDENTIAL ID:</span>
+                        <span className="text-[#dfb88e]">{cert.id}</span>
                       </div>
                     )}
                   </div>
@@ -176,7 +177,7 @@ export default function Certifications() {
             </div>
             <button 
               onClick={() => setShowAll(false)}
-              className="mx-auto mt-12 flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-gray-400 rounded-xl font-bold hover:bg-white/10 hover:text-white transition-all underline decoration-cyber-green underline-offset-4"
+              className="mx-auto mt-10 flex items-center gap-2 px-7 py-3 bg-[#141211] border border-[#c59b6d]/30 text-[#d5cec5] rounded-xl font-mono text-xs uppercase tracking-wider hover:text-[#dfb88e] transition-all"
             >
               Minimize View
             </button>
@@ -201,14 +202,14 @@ function MarqueeRow({ items, direction, speed }: { items: any[], direction: "lef
       {[...items, ...items].map((cert, i) => (
         <div 
           key={i} 
-          className="group flex items-center gap-4 px-6 py-4 rounded-xl bg-card-bg/40 border border-white/5 hover:border-cyber-green/40 hover:bg-cyber-green/5 transition-all cursor-pointer"
+          className="group flex items-center gap-4 px-6 py-4 rounded-xl bg-[#141211]/80 border border-[#c59b6d]/15 hover:border-[#c59b6d]/40 hover:bg-[#1a1614] transition-all cursor-pointer shadow-md"
         >
-          <div className="w-10 h-10 bg-cyber-green/10 rounded-lg flex items-center justify-center group-hover:bg-cyber-green/20 transition-colors">
-            <Award className="text-cyber-green w-5 h-5" />
+          <div className="w-9 h-9 bg-[#c59b6d]/10 rounded-lg flex items-center justify-center group-hover:bg-[#c59b6d]/20 transition-colors">
+            <Award className="text-[#c59b6d] w-4 h-4" />
           </div>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-cyber-green transition-colors leading-none">{cert.name}</p>
-            <p className="text-[10px] text-gray-500 font-mono mt-1 uppercase tracking-tighter">{cert.issuer}</p>
+            <p className="text-sm font-light text-[#f7f4ee] group-hover:text-[#dfb88e] transition-colors leading-none">{cert.name}</p>
+            <p className="text-[10px] text-[#a8a29e] font-mono mt-1.5 uppercase tracking-wider">{cert.issuer}</p>
           </div>
         </div>
       ))}
