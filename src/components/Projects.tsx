@@ -38,14 +38,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-28 px-6 lg:px-12 bg-[#0b0c0e] relative border-t border-[#c59b6d]/10">
       <div className="max-w-7xl mx-auto">
         <SectionHeader 
-          title="Featured Projects" 
-          subtitle="A selection of my technical projects focused on security engineering and tool development."
+          badge="Featured Engineering"
+          title="Security Projects" 
+          subtitle="A selection of technical projects focused on offensive testing, endpoint security, and defensive tooling."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
           {projects.map((project, idx) => (
             <ProjectCard key={project.title} {...project} index={idx} />
           ))}
