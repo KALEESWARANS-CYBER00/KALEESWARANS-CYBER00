@@ -1,34 +1,52 @@
 'use client';
 
-import { Shield, Heart, Terminal } from 'lucide-react';
-
 export default function Footer() {
   return (
-    <footer className="py-12 border-t border-white/5 bg-dark-bg">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-cyber-green/10 rounded flex items-center justify-center">
-              <Shield className="text-cyber-green w-5 h-5" />
-            </div>
-            <span className="font-bold text-lg tracking-tight">
-              KALEESWARAN<span className="text-cyber-green">.S</span>
-            </span>
+    <footer className="py-20 px-6 sm:px-12 lg:px-16 bg-[#09090b] border-t border-white/[0.08] text-xs font-mono text-[#a8a29e]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+        {/* Left: Name & Disciplines */}
+        <div>
+          <div className="text-sm font-light tracking-[0.2em] uppercase text-[#f7f4ee] mb-4">
+            KALEESWARAN S
           </div>
-
-          <p className="text-gray-500 text-sm max-w-sm text-center md:text-right italic">
-            “Built with passion for cybersecurity, threat intelligence, and ethical hacking.”
-          </p>
+          <div className="flex flex-col gap-1 text-[11px] tracking-wider text-[#c59b6d]">
+            <span>CYBERSECURITY</span>
+            <span>TECHNOLOGY</span>
+            <span>CREATIVE ENGINEERING</span>
+          </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 text-xs font-mono">
-            © {new Date().getFullYear()} KALEESWARAN S. ALL SYSTEMS SECURE.
-          </p>
-          <div className="flex items-center gap-2 text-gray-600 text-xs font-mono">
-            <span>Powered by</span>
-            <Terminal className="text-cyber-green w-4 h-4" />
-            <span>KALEESWARAN S</span>
+        {/* Right: Social Channels & Copyright */}
+        <div className="flex flex-col md:items-end gap-6">
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.linkedin.com/in/kaleeswarans25/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#d5cec5] hover:text-[#dfb88e] transition-colors"
+            >
+              LinkedIn
+            </a>
+            <span className="text-white/20">•</span>
+            <a
+              href="https://github.com/KALEESWARANS-CYBER00"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#d5cec5] hover:text-[#dfb88e] transition-colors"
+            >
+              GitHub
+            </a>
+            <span className="text-white/20">•</span>
+            <a
+              href="mailto:kaleeswaran.bcy24@rathinam.in"
+              className="text-[#d5cec5] hover:text-[#dfb88e] transition-colors"
+            >
+              Email
+            </a>
+          </div>
+
+          <div className="text-[10px] text-[#a8a29e]/60">
+            © 2026 KALEESWARAN S. ALL RIGHTS RESERVED.
           </div>
         </div>
       </div>
