@@ -1,151 +1,78 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyber-green: #f59e0b;
-  /* Amber/Gold for cinematic feel */
-  --color-cyber-cyan: #c70000;
-  /* Teal/Cyan */
   --color-dark-bg: #09090b;
-  /* Very dark cinematic black */
-  --color-card-bg: #18181b;
-  /* Dark cinematic gray */
-  --color-font: #ffffff;
-  /* White for font */
+  --color-surface: #121316;
+  --color-surface-warm: #181513;
+  --color-bronze: #c59b6d;
+  --color-champagne: #dfb88e;
+  --color-cream: #f7f4ee;
+  --color-cream-muted: #d5cec5;
+  --color-font: #f7f4ee;
 
-  --animate-terminal: terminal-cursor 1s infinite;
-
-  @keyframes terminal-cursor {
-
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-  }
+  --color-cyber-green: #c59b6d;
+  --color-cyber-cyan: #dfb88e;
 }
 
 :root {
   --background: #09090b;
-  --foreground: #f8fafc;
-  --cyber-green: #f59e0b;
-  --cyber-cyan: #c70000;
-  --font-color: var(--color-font);
+  --foreground: #f7f4ee;
+  --bronze: #c59b6d;
+  --champagne: #dfb88e;
 }
 
-html,
+html {
+  background-color: #09090b;
+  color: #f7f4ee;
+  scroll-behavior: smooth;
+}
+
 body {
-  /* Animated gradient background */
-  background: linear-gradient(-45deg, var(--color-dark-bg), #0a0a1a, var(--color-cyber-cyan), var(--color-cyber-green));
-  background-size: 400% 400%;
-  animation: bgGradient 30s ease infinite;
-  color: var(--font-color);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  background-color: #09090b;
+  color: #f7f4ee;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes bgGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+::selection {
+  background: #c59b6d;
+  color: #09090b;
 }
 
-.bg1 {
-  /* Animated gradient background for section */
-  background: linear-gradient(-45deg, var(--color-dark-bg), var(--color-cyber-green), var(--color-cyber-cyan));
-  background-size: 400% 400%;
-  animation: bg1Anim 20s ease infinite;
-  min-height: 100vh;
+/* Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-.bg3 {
-  /* Different animated gradient for another section */
-  background: linear-gradient(-45deg, var(--color-dark-bg), #1a1a2e, var(--color-cyber-cyan), var(--color-cyber-green));
-  background-size: 400% 400%;
-  animation: bg3Anim 25s ease infinite;
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  background: #09090b;
 }
 
-@keyframes bg1Anim {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+::-webkit-scrollbar-thumb {
+  background: #231e1a;
+  border-radius: 3px;
+  border: 1px solid rgba(197, 155, 109, 0.15);
 }
 
-@keyframes bg3Anim {
-  0% {
-    background-position: 100% 0%;
-  }
-
-  50% {
-    background-position: 0% 100%;
-  }
-
-  100% {
-    background-position: 100% 0%;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #3a2e26;
 }
 
-
-
-.terminal-cursor::after {
-  content: '|';
-  animation: var(--animate-terminal);
+/* Typography Utilities */
+.tracking-headline {
+  letter-spacing: -0.045em;
 }
 
-.about-bg {
-  
-  background: linear-gradient(to top, rgb(0, 0, 0), #f59e0b66);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+.tracking-eyebrow {
+  letter-spacing: 0.25em;
 }
 
-/* Global text color */
-body,
-p,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-li {
-  color: var(--font-color);
-}
-
-.splash-gradient {
-  background: linear-gradient(
-    135deg,
-    #fbbf24 0%,
-    #f59e0b 30%,
-    #f97316 65%,
-    #c70000 100%
-  );
-
+.text-editorial-gradient {
+  background: linear-gradient(135deg, #f7f4ee 0%, #dfb88e 50%, #c59b6d 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
