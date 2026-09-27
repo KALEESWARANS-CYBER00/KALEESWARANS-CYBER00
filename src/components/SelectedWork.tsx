@@ -63,16 +63,16 @@ const projects: ProjectItem[] = [
 
 export default function SelectedWork() {
   return (
-    <section id="work" className="py-32 px-6 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]">
+    <section id="work" className="py-16 sm:py-32 px-4 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 mb-12 sm:mb-20">
           <div>
-            <h2 className="text-4xl sm:text-6xl font-black tracking-headline text-[#f7f4ee]">
+            <h2 className="text-3xl sm:text-6xl font-black tracking-headline text-[#f7f4ee]">
               SELECTED WORK<span className="text-[#c59b6d]">.</span>
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-[#d5cec5] font-light max-w-md leading-relaxed">
+          <p className="text-xs sm:text-base text-[#d5cec5] font-light max-w-md leading-relaxed">
             Security research, technology projects and digital systems I’ve built, explored and engineered.
           </p>
         </div>
@@ -85,12 +85,12 @@ export default function SelectedWork() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block py-8 sm:py-10 transition-all duration-300 hover:bg-[#121316]/50 px-2 sm:px-6 -mx-2 sm:-mx-6"
+              className="group block py-6 sm:py-10 transition-all duration-300 hover:bg-[#121316]/50 px-2 sm:px-6 -mx-2 sm:-mx-6"
             >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center">
                 {/* Project Name & Category */}
                 <div className="md:col-span-5">
-                  <h3 className="text-2xl sm:text-3xl font-light text-[#f7f4ee] group-hover:text-[#dfb88e] transition-colors tracking-tight mb-1 flex items-center gap-3">
+                  <h3 className="text-xl sm:text-3xl font-light text-[#f7f4ee] group-hover:text-[#dfb88e] transition-colors tracking-tight mb-1 flex items-center gap-3">
                     <span>{project.name}</span>
                   </h3>
                   <div className="text-xs font-mono text-[#c59b6d] tracking-wider uppercase">
@@ -99,9 +99,9 @@ export default function SelectedWork() {
                 </div>
 
                 {/* Short Description */}
-                <div className="md:col-span-5 text-sm font-light text-[#d5cec5] leading-relaxed">
+                <div className="md:col-span-5 text-xs sm:text-sm font-light text-[#d5cec5] leading-relaxed">
                   {project.description}
-                  <div className="flex flex-wrap gap-2 mt-3">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
@@ -116,8 +116,8 @@ export default function SelectedWork() {
                 {/* Year & Arrow */}
                 <div className="md:col-span-2 flex items-center justify-between md:justify-end gap-6 text-right">
                   <span className="text-xs font-mono text-[#a8a29e]">{project.year}</span>
-                  <div className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-[#d5cec5] group-hover:border-[#dfb88e] group-hover:text-[#dfb88e] group-hover:translate-x-1.5 transition-all duration-300">
-                    <ArrowUpRight className="w-4 h-4" />
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/10 flex items-center justify-center text-[#d5cec5] group-hover:border-[#dfb88e] group-hover:text-[#dfb88e] group-hover:translate-x-1.5 transition-all duration-300">
+                    <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                 </div>
               </div>
@@ -126,8 +126,8 @@ export default function SelectedWork() {
         </div>
 
         {/* GitHub Full Archive Link */}
-        <div className="mt-16 pt-8 border-t border-white/[0.07] flex items-center justify-between">
-          <span className="text-xs font-mono text-[#a8a29e]">
+        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/[0.07] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <span className="text-[11px] sm:text-xs font-mono text-[#a8a29e]">
             ADDITIONAL EXPERIMENTAL REPOSITORIES ON GITHUB
           </span>
           <a
