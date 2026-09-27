@@ -41,11 +41,11 @@ const capabilities = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-32 px-6 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]">
+    <section id="about" className="py-16 sm:py-32 px-4 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]">
       <div className="max-w-7xl mx-auto">
         {/* Large Editorial Typographic Statement */}
-        <div className="mb-20">
-          <h2 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-headline text-[#f7f4ee] leading-[0.96] max-w-5xl">
+        <div className="mb-12 sm:mb-20">
+          <h2 className="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-headline text-[#f7f4ee] leading-[0.98] sm:leading-[0.96] max-w-5xl">
             <span className="block">I WORK AT THE</span>
             <span className="block text-[#c59b6d]">INTERSECTION OF</span>
             <span className="block">SECURITY AND</span>
@@ -54,7 +54,7 @@ export default function AboutSection() {
         </div>
 
         {/* Concise, Human, Credible Paragraph */}
-        <div className="pb-24 border-b border-white/10 max-w-4xl space-y-6 text-base sm:text-lg text-[#d5cec5] font-light leading-relaxed">
+        <div className="pb-12 sm:pb-24 border-b border-white/10 max-w-4xl space-y-4 sm:space-y-6 text-sm sm:text-lg text-[#d5cec5] font-light leading-relaxed">
           <p>
             I am Kaleeswaran S — a Red Team Security Specialist, Cloud Security Architect, and Full-Stack Software Engineer focused on understanding how systems fail, how adversaries operate, and how to engineer resilient software that withstands real-world threats.
           </p>
@@ -64,27 +64,27 @@ export default function AboutSection() {
         </div>
 
         {/* Capabilities Section: Typography & Layout Driven */}
-        <div className="pt-24">
-          <div className="mb-16">
-            <h3 className="text-3xl sm:text-4xl font-light tracking-tight text-[#f7f4ee]">
+        <div className="pt-12 sm:pt-24">
+          <div className="mb-10 sm:mb-16">
+            <h3 className="text-2xl sm:text-4xl font-light tracking-tight text-[#f7f4ee]">
               Technical Competencies<span className="text-[#c59b6d]">.</span>
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
             {capabilities.map((cap) => (
               <div key={cap.category} className="flex flex-col">
-                <div className="pb-4 mb-6 border-b border-white/10">
-                  <h4 className="text-lg font-mono font-medium tracking-wider text-[#f7f4ee]">
+                <div className="pb-3 sm:pb-4 mb-4 sm:mb-6 border-b border-white/10">
+                  <h4 className="text-base sm:text-lg font-mono font-medium tracking-wider text-[#f7f4ee]">
                     {cap.category}
                   </h4>
                 </div>
 
-                <p className="text-sm font-light text-[#a8a29e] mb-8 leading-relaxed">
+                <p className="text-xs sm:text-sm font-light text-[#a8a29e] mb-6 sm:mb-8 leading-relaxed">
                   {cap.summary}
                 </p>
 
-                <ul className="space-y-3.5 mt-auto">
+                <ul className="space-y-2.5 sm:space-y-3.5 mt-auto">
                   {cap.items.map((item) => (
                     <li
                       key={item}
