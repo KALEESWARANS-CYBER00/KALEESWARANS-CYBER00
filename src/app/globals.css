@@ -4,6 +4,7 @@
   --color-dark-bg: #09090b;
   --color-surface: #121316;
   --color-surface-warm: #181513;
+  --color-surface-lighter: #1e1f26;
   --color-bronze: #c59b6d;
   --color-champagne: #dfb88e;
   --color-cream: #f7f4ee;
@@ -77,4 +78,18 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+/* 80% Black / 20% Lighter Atmospheric Cyber Gradients */
+.cyber-gradient-container {
+  background: linear-gradient(
+    180deg,
+    #09090b 0%,
+    #111217 15%,
+    #181614 35%,
+    #121319 55%,
+    #191613 75%,
+    #0b0c10 90%,
+    #09090b 100%
+  );
 }

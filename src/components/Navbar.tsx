@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, Maximize2, Minimize2, Volume2, VolumeX } from 'lucide-react';
+import { ArrowUpRight, Maximize2, Minimize2, Volume2, VolumeX, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { audioManager } from '@/lib/audio';
+import CommandPalette from '@/components/CommandPalette';
 
 const navLinks = [
   { name: 'WORK', href: '#work' },
@@ -18,6 +19,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
 
   useEffect(() => {
     const unsubscribe = audioManager.subscribe((playing) => {
@@ -36,6 +38,20 @@ export default function Navbar() {
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setPaletteOpen((prev) => !prev);
+      } else if (e.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   useEffect(() => {
@@ -121,12 +137,12 @@ export default function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#c59b6d] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#c59b6d]" />
               </span>
-              <span className="text-[#dfb88e]/90 font-medium">RED TEAM & SYSTEMS</span>
+              <span className="text-[#dfb88e]/90 font-medium">RED TEAM &amp; SYSTEMS</span>
             </div>
           </div>
 
-          {/* Right: Sleek Desktop Navigation & Bronze CV Action */}
-          <nav className="hidden md:flex items-center gap-7 lg:gap-8">
+          {/* Right: Sleek Desktop Navigation & Controls */}
+          <nav className="hidden md:flex items-center gap-5 lg:gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -137,12 +153,24 @@ export default function Navbar() {
               </a>
             ))}
 
+            {/* Sleek Search & Quick Command Palette Trigger */}
+            <button
+              onClick={() => setPaletteOpen(true)}
+              className="inline-flex items-center gap-2 px-3 py-1.5 border border-white/10 hover:border-[#c59b6d]/60 bg-[#121316]/70 rounded text-xs font-mono text-[#d5cec5] hover:text-[#dfb88e] transition-all cursor-pointer group shadow-sm"
+              title="Search & Quick Jump (⌘K or /)"
+              aria-label="Search & Quick Jump"
+            >
+              <Search className="w-3.5 h-3.5 text-[#c59b6d] group-hover:scale-110 transition-transform" />
+              <span className="text-[11px] text-[#a8a29e] group-hover:text-[#dfb88e]">Search...</span>
+              <span className="text-[9px] bg-white/5 border border-white/10 px-1.5 py-0.2 rounded text-[#a8a29e]">⌘K</span>
+            </button>
+
             {/* Architectural Bronze CV Action */}
             <a
               href="/KALEESWARAN_S-RESUME.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-1.5 border border-[#c59b6d]/40 bg-[#181513]/60 hover:bg-[#c59b6d] hover:text-[#09090b] text-[#dfb88e] text-xs font-mono uppercase tracking-widest transition-all duration-300 font-semibold group rounded shadow-[0_2px_12px_rgba(197,155,109,0.15)]"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-[#c59b6d]/40 bg-[#181513]/60 hover:bg-[#c59b6d] hover:text-[#09090b] text-[#dfb88e] text-xs font-mono uppercase tracking-widest transition-all duration-300 font-semibold group rounded shadow-[0_2px_12px_rgba(197,155,109,0.15)]"
             >
               <span>CV</span>
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -189,11 +217,20 @@ export default function Navbar() {
             </button>
           </nav>
 
-          {/* Mobile Actions: Audio + Fullscreen + Menu Trigger */}
-          <div className="flex md:hidden items-center gap-2">
+          {/* Mobile Actions: Search + Audio + Fullscreen + Menu Trigger */}
+          <div className="flex md:hidden items-center gap-1.5 sm:gap-2">
+            <button
+              onClick={() => setPaletteOpen(true)}
+              className="p-2 border border-white/10 bg-[#121316]/80 rounded text-[#dfb88e] active:scale-95 transition-transform"
+              aria-label="Search and quick jump"
+              title="Search"
+            >
+              <Search className="w-3.5 h-3.5 text-[#c59b6d]" />
+            </button>
+
             <button
               onClick={toggleAudio}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 border border-[#c59b6d]/30 bg-[#121316]/80 rounded text-[#dfb88e] active:scale-95 transition-transform"
+              className="flex items-center gap-1.5 px-2 py-1.5 border border-[#c59b6d]/30 bg-[#121316]/80 rounded text-[#dfb88e] active:scale-95 transition-transform"
               title={isPlaying ? 'Click to Mute Music' : 'Click to Play Music'}
               aria-label={isPlaying ? 'Mute background audio' : 'Play background audio'}
             >
@@ -219,12 +256,12 @@ export default function Navbar() {
               className="p-2 border border-white/10 rounded text-[#dfb88e] active:scale-95 transition-transform"
               aria-label="Toggle Fullscreen"
             >
-              {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+              {isFullscreen ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
             </button>
 
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="inline-flex items-center gap-2 px-3 py-2 border border-white/10 rounded text-xs font-mono tracking-widest text-[#dfb88e] hover:text-[#f7f4ee] uppercase active:scale-95 transition-transform"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 border border-white/10 rounded text-xs font-mono tracking-widest text-[#dfb88e] hover:text-[#f7f4ee] uppercase active:scale-95 transition-transform"
               aria-label="Open menu"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#c59b6d]" />
@@ -234,7 +271,10 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Fullscreen Editorial Drawer */}
+      {/* Command Palette Modal */}
+      <CommandPalette isOpen={paletteOpen} onClose={() => setPaletteOpen(false)} />
+
+      {/* Mobile Fullscreen Drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -252,7 +292,7 @@ export default function Navbar() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#c59b6d]" />
                 </span>
                 <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#dfb88e]">
-                  RED TEAM & SYSTEMS
+                  RED TEAM &amp; SYSTEMS
                 </span>
               </div>
               <button
@@ -277,6 +317,30 @@ export default function Navbar() {
               ))}
 
               <div className="pt-6 border-t border-white/10 flex flex-col gap-3">
+                {/* Search / Command Launcher in Mobile Drawer */}
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setPaletteOpen(true);
+                  }}
+                  className="flex items-center justify-between p-3.5 rounded bg-[#121316] border border-white/10 text-left active:scale-[0.98] transition-transform"
+                >
+                  <div className="flex items-center gap-3">
+                    <Search className="w-4 h-4 text-[#c59b6d]" />
+                    <div>
+                      <div className="text-[11px] font-mono uppercase tracking-wider text-[#dfb88e]">
+                        SEARCH PORTFOLIO
+                      </div>
+                      <div className="text-[10px] text-[#a8a29e] font-mono">
+                        QUICK JUMP TO SECTIONS &amp; WORK
+                      </div>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded bg-[#c59b6d]/15 text-[#dfb88e]">
+                    SEARCH
+                  </span>
+                </button>
+
                 {/* Audio soundtrack controller inside drawer */}
                 <button
                   onClick={toggleAudio}
