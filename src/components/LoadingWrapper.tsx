@@ -2,6 +2,7 @@
 
 import { ReactNode, useEffect } from 'react';
 import SplashScreen from '@/components/SplashScreen';
+import CyberCrosshairCursor from '@/components/CyberCrosshairCursor';
 import { playAudioOnInteraction } from '@/lib/audio';
 
 export const requestFullscreenMode = () => {
@@ -121,6 +122,7 @@ export default function LoadingWrapper({ children }: { children: ReactNode }) {
   return (
     <>
       <SplashScreen />
+      <CyberCrosshairCursor />
       {children}
     </>
   );
