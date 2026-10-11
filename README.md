@@ -1,561 +1,300 @@
-<!-- BANNER IMAGE -->
-
-<!-- HERO SECTION -->
 <div align="center">
 
- 
-  # Kaleeswaran S
-  ### **Ethical Hacker • Penetration Tester • Full-Stack Developer • Security Researcher**
-
-  <p align="center">
-    <em>"Building secure systems through offensive security and software engineering."</em>
+  <p>
+    <img src="https://img.shields.io/badge/STATUS-AVAILABLE%20FOR%20ROLES-10b981?style=flat-square&logo=radar&logoColor=white" alt="Status" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/SLA-RESPONSE%20TIME%20%3C%2024H-c59b6d?style=flat-square" alt="SLA" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/TRYHACKME-TOP%204%25%20GLOBAL-22c55e?style=flat-square&logo=tryhackme&logoColor=white" alt="THM" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/LEETCODE-281%20SOLVED-FFA116?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode" />
   </p>
 
-  <!-- ONE TYPING ANIMATION ONLY -->
+  # KALEESWARAN S
+  ### **CYBERSECURITY ANALYST & SYSTEMS ENGINEER**
+
+  <p align="center">
+    <em>"Focused on host telemetry & eBPF detection, vulnerability research across web and network layers, and defensive systems hardening."</em>
+  </p>
+
   <a href="https://github.com/KALEESWARANS-CYBER00">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=17&pause=1200&color=22C55E&center=true&vCenter=true&width=750&lines=Ethical+Hacking+%26+Penetration+Testing;Security+Automation+%26+Tooling;Full-Stack+Security+Engineering;Active+Directory+Adversary+Emulation" alt="Typing Tagline" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&pause=1200&color=c59b6d&center=true&vCenter=true&width=800&lines=Offensive+Security+%E2%80%A2+Adversary+Emulation+%E2%80%A2+Red+Team;Linux+Host+Telemetry+%E2%80%A2+eBPF+Kernel+Detection;Web+%26+Network+Vulnerability+Research+%E2%80%A2+Exploit+Dev;Defensive+Systems+Hardening+%E2%80%A2+Security+Tooling" alt="Typing Tagline" />
   </a>
 
   <br /><br />
 
   <p>
-    <img src="https://komarev.com/ghpvc/?username=KALEESWARANS-CYBER00&style=flat-square&color=22c55e" alt="Profile Views" />
+    <a href="#selected-work">
+      <img src="https://img.shields.io/badge/EXPLORE-SELECTED%20WORK-c59b6d?style=for-the-badge" alt="Selected Work" />
+    </a>
     &nbsp;
-    <img src="https://img.shields.io/github/followers/KALEESWARANS-CYBER00?style=flat-square&color=06b6d4&label=Followers" alt="Followers" />
+    <a href="#direct-channels">
+      <img src="https://img.shields.io/badge/INITIATE-CONTACT-dfb88e?style=for-the-badge" alt="Contact" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/KALEESWARANS-CYBER00">
+      <img src="https://img.shields.io/github/followers/KALEESWARANS-CYBER00?style=for-the-badge&color=121316&label=FOLLOWERS&logo=github" alt="Followers" />
+    </a>
   </p>
 
 </div>
 
 ---
 
-## 👨‍💻 ABOUT ME
+## Technical Profile & Specialization Focus
 
-I am an **Ethical Hacker**, **Penetration Tester**, and **Full-Stack Developer** focused on discovering vulnerabilities and engineering secure systems. By combining offensive penetration testing techniques with full-stack software development, I build tools and architectures that withstand real-world attacks.
+Cybersecurity Analyst, Systems Engineer, and Security Researcher with an engineering-first approach to information security. Blends low-level systems mechanics with offensive penetration testing to discover security gaps, build automated telemetry engines, and engineer resilient production architectures.
 
-- **Specialization:** Web application penetration testing, security automation, API security, and Active Directory attack paths.
-- **Currently Learning:** Cloud security architecture (AWS/Azure) and advanced adversary emulation techniques.
-- **Long-Term Goal:** To become a lead Application Security Engineer / Red Team Specialist, developing enterprise-grade security tools and conducting high-impact vulnerability research.
+- **Host & Systems Telemetry**: Linux kernel behavioral monitoring, process tree tracking, and eBPF anomaly detection.
+- **Offensive Security & Red Teaming**: Adversary emulation, network protocol fuzzing, web application penetration testing (OWASP Top 10), and blind database injection research.
+- **Defensive Engineering**: Cryptographic authentication architectures (TOTP, JWT RS256, Argon2id), network container isolation, and offline EDR engines.
+- **Community Research**: Active security researcher with DEF CON Group Coimbatore (DCG 91422).
+
+```
+[SYSTEM TELEMETRY SUMMARY]
+Identity    : KALEESWARAN S
+Discipline  : Cybersecurity Analyst & Systems Engineer
+Endpoint    : kaleeswaran.bcy24@rathinam.in
+Telephone   : +91 6374892220
+Focus Areas : eBPF Telemetry | Vulnerability Research | Security Tooling | Systems Hardening
+Status      : Active & Open for Security Engineering Opportunities
+```
 
 ---
 
-## 🛠️ CORE EXPERTISE
+<a id="selected-work"></a>
+## Enterprise Case Studies & Security Systems
 
-| Area | Skills | Tools |
+Showcasing selected security research, software tooling, and architectural systems engineered for defensive resilience and offensive validation.
+
+---
+
+### CASE STUDY 01 • RedAlert EDR
+**Offline Linux Endpoint Detection & Response Engine**
+
+> **System & Domain**: Security Engineering & Host Telemetry  
+> **Verification Status**: Completed • Functional Telemetry Prototype  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/redalert-edr](https://github.com/KALEESWARANS-CYBER00/redalert-edr)
+
+- **Overview**: Offline Endpoint Detection & Response engine for host-level behavioral telemetry, anomalous process identification, and automated threat isolation on Linux.
+- **Threat Vector**: Linux kernel-level process anomalies, unauthorized privilege escalation, stealth persistence mechanisms, and anomalous socket connections.
+- **Architectural Highlights**:
+  - Kernel behavioral telemetry & process tree monitoring
+  - Heuristic rule engine for rapid anomaly detection
+  - Automated process freeze and network isolation routine
+  - Lightweight offline telemetry logging without cloud dependence
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=python,linux,bash&perline=6" alt="RedAlert Stack" />
+  </p>
+  `Python` · `Linux Kernel` · `Threat Detection` · `EDR` · `eBPF`
+
+---
+
+### CASE STUDY 02 • ClickTrap
+**Adversary Simulation & Social Engineering Awareness Platform**
+
+> **System & Domain**: Defensive Security & Adversary Simulation  
+> **Verification Status**: Completed • Active Educational Engine  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/clicktrap](https://github.com/KALEESWARANS-CYBER00/clicktrap)
+
+- **Overview**: Adversary simulation and social engineering awareness platform demonstrating file camouflage, payload masquerading, and human vulnerability surfaces.
+- **Threat Vector**: Phishing techniques, double-extension file masquerading, spear-phishing payload simulation, and employee awareness telemetry.
+- **Architectural Highlights**:
+  - Interactive adversary scenario simulation engine
+  - Dynamic payload masquerade and decoy file demonstrator
+  - Real-time behavioral training feedback & risk scoring
+  - Educational threat breakdown and defense recommendations
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=react,js,html,css&perline=6" alt="ClickTrap Stack" />
+  </p>
+  `React` · `Social Engineering` · `Security Education` · `Simulation`
+
+---
+
+### CASE STUDY 03 • SQLi-Report
+**Automated Heuristic SQL Injection Scanner & CVSS Audit Generator**
+
+> **System & Domain**: Offensive Research & Vulnerability Assessment  
+> **Verification Status**: Completed • CLI Tooling  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/sqli-report](https://github.com/KALEESWARANS-CYBER00/sqli-report)
+
+- **Overview**: Automated command-line vulnerability assessment tool conducting heuristic database injection analysis, blind verification, and structured reporting.
+- **Threat Vector**: Unsanitized user inputs, boolean-based blind SQLi, time-based blind SQLi, and union-based extraction vectors across relational DBMS.
+- **Architectural Highlights**:
+  - Adaptive HTTP parameter crawling and payload fuzzing
+  - Differential response parsing & time-anomaly verification
+  - Automated vulnerability grading based on CVSS scoring
+  - Structured markdown and terminal audit report generator
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=python,bash,mysql,postgres&perline=6" alt="SQLi-Report Stack" />
+  </p>
+  `Python` · `Penetration Testing` · `OWASP Top 10` · `CLI Scanner`
+
+---
+
+### CASE STUDY 04 • DNS Lab
+**Containerized Resolution Poisoning & Protocol Telemetry Testbed**
+
+> **System & Domain**: Network Security & Packet Telemetry  
+> **Verification Status**: Completed • Reproducible Lab  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/dns-lab](https://github.com/KALEESWARANS-CYBER00/dns-lab)
+
+- **Overview**: Containerized DNS testbed for investigating resolution poisoning, recursive query caching anomalies, and network packet telemetry.
+- **Threat Vector**: DNS cache poisoning, Kaminsky vulnerability replication, query spoofing, and man-in-the-middle recursive resolver attacks.
+- **Architectural Highlights**:
+  - Multi-container isolated Bind9 recursive and authoritative DNS nodes
+  - PCAP packet telemetry capture & Wireshark protocol dissection
+  - DNSSEC cryptographic validation and integrity test suite
+  - Automated attack payload simulation and anomaly logger
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=docker,linux,bash&perline=6" alt="DNS Lab Stack" />
+  </p>
+  `Docker` · `Wireshark` · `DNSSEC` · `Networking` · `Bind9`
+
+---
+
+### CASE STUDY 05 • Authify
+**Cryptographic Identity Verification & Hardened Token Architecture**
+
+> **System & Domain**: Full-Stack Security & Identity Protocols  
+> **Verification Status**: Completed • Production Prototype  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/authify](https://github.com/KALEESWARANS-CYBER00/authify)
+
+- **Overview**: Hardened identity verification architecture implementing time-based OTP workflows, cryptographically signed JWT sessions, and rate-limited endpoints.
+- **Threat Vector**: Credential stuffing, session hijacking, replay attacks, brute-force token guessing, and timing attacks on cryptographic hashing.
+- **Architectural Highlights**:
+  - Time-based One-Time Password (TOTP) state verification
+  - Cryptographically signed, rotating JWT session management
+  - Adaptive IP & user-based sliding window rate limiting
+  - Constant-time token validation and Argon2id password hashing
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,redis,postgres&perline=6" alt="Authify Stack" />
+  </p>
+  `Node.js` · `Express` · `JWT` · `REST API` · `Argon2`
+
+---
+
+### CASE STUDY 06 • ReconMap
+**Automated Attack Surface Discovery & OSINT Framework**
+
+> **System & Domain**: Offensive Research & Attack Surface Mapping  
+> **Verification Status**: Completed • Recon Framework  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/ReconMap](https://github.com/KALEESWARANS-CYBER00/ReconMap)
+
+- **Overview**: Automated attack surface discovery and reconnaissance framework conducting passive OSINT, subdomain permutation enumeration, and port telemetry.
+- **Threat Vector**: Unmapped shadow IT assets, exposed administrative endpoints, subdomain takeover vectors, and public IP vulnerability exposures.
+- **Architectural Highlights**:
+  - Asynchronous multi-threaded subdomain bruteforcing engine
+  - DNS wildcard filtering and certificate transparency log scraping
+  - Integration with Nmap NSE scripts for rapid service fingerprinting
+  - Comprehensive visual graph export for attack surface reporting
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=python,bash,linux&perline=6" alt="ReconMap Stack" />
+  </p>
+  `Python` · `Nmap API` · `OSINT` · `Reconnaissance` · `DNS Enumeration`
+
+---
+
+### CASE STUDY 07 • Kali-CLI
+**Terminal-Native Penetration Testing Automation Suite**
+
+> **System & Domain**: Security Engineering & CLI Automation  
+> **Verification Status**: Completed • Operational Toolkit  
+> **Repository**: [github.com/KALEESWARANS-CYBER00/kali-cli](https://github.com/KALEESWARANS-CYBER00/kali-cli)
+
+- **Overview**: Terminal-native penetration testing automation toolkit providing standardized execution wrappers for reconnaissance, vulnerability scanning, and credential audits.
+- **Threat Vector**: Repetitive operator errors during penetration testing engagements, missed assessment vectors, and unstandardized command outputs.
+- **Architectural Highlights**:
+  - Modular CLI orchestrator with custom bash script automation
+  - Automated multi-tool execution pipelines for network discovery
+  - Structured parsing of standard security utility outputs
+  - Zero-dependency execution across standard Debian and Kali environments
+- **Tech Stack & Core Technologies**:
+  <p align="left">
+    <img src="https://skillicons.dev/icons?i=bash,python,linux&perline=6" alt="Kali-CLI Stack" />
+  </p>
+  `Bash` · `Python` · `Kali Linux` · `CLI Automation` · `Security Tooling`
+
+---
+
+## Core Competencies & Technical Arsenal
+
+### 1. Offensive Security & Red Teaming
+- **Vulnerability Research**: OWASP Top 10, Blind SQLi, Cross-Site Scripting, SSRF, IDOR, Broken Authentication
+- **Discovery & Enumeration**: `Nmap`, `Wireshark`, `Masscan`, `Amass`, `Subfinder`, `ffuf`, `Gobuster`
+- **Adversary Emulation**: `Metasploit Framework`, `Hydra`, `John the Ripper`, `Hashcat`, `Impacket`, `BloodHound`
+- **Reverse Engineering**: `Ghidra`, `GDB`, `pwndbg`, `pwntools`, ELF & PE Binary Analysis
+
+### 2. Systems, Infrastructure & Telemetry
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,docker,aws,bash&perline=7" alt="Infrastructure Stack" />
+</p>
+
+- **Host Telemetry**: Linux Kernel process inspection, eBPF logging, Systemd services, SUID privilege escalation
+- **Virtualization & Isolation**: Docker, Container namespaces, Cgroups, Chroot jails
+- **Cloud Security**: AWS IAM, EC2, S3, VPC, CloudTrail, CloudWatch, KMS cryptographic policies
+
+### 3. Full-Stack & Engineering Tooling
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,java,c,cpp,js,ts,react,nextjs,nodejs,express,postgres,mongodb,redis&perline=7" alt="Engineering Stack" />
+</p>
+
+- **Languages**: Python (Automation & Security), Java (DSA & Enterprise), C/C++ (Systems), Bash, JavaScript, TypeScript
+- **Backend & APIs**: Node.js, Express, Next.js, RESTful microservices, WebSocket channels
+- **Databases & Cache**: PostgreSQL, MySQL, MariaDB, MongoDB, Redis in-memory caching
+
+---
+
+## Verified Milestones & Achievements
+
+| Platform / Organization | Milestone | Verified Proof / Scope |
 | :--- | :--- | :--- |
-| **Web Security** | OWASP Top 10, REST/GraphQL API testing, Auth Bypass | Burp Suite Pro, FFUF, OWASP ZAP, Postman |
-| **Penetration Testing** | Vulnerability scanning, Manual exploitation, PrivEsc | Nmap, Metasploit, LinPEAS, WinPEAS |
-| **Security Automation** | Asynchronous fuzzing, Recon pipelines, Log parsing | Python (Asyncio), Bash, Go, Docker |
-| **Active Directory** | Kerberoasting, DCSync, Domain Escalation, GPO abuse | BloodHound, Mimikatz, Impacket, Rubeus |
-| **Full-Stack Development**| Secure REST APIs, Responsive UI, DB design | Next.js, React, Node.js, TypeScript, PostgreSQL |
-| **Cloud Security** | CSPM basics, IAM policy auditing, Container security | AWS, Azure, Docker, Terraform |
+| **TryHackMe** | **Top 4% Global** | 114-Day Continuous Streak • 93 Completed Rooms • 13 Badges |
+| **LeetCode** | **281 Problems Solved** | Global Rank ~499k • Core Focus: Algorithms & Complexity (Java/Python) |
+| **DEF CON Group Coimbatore** | **DCG 91422 Active Researcher** | Technical talks, RF/hardware hacking labs, offensive meetups |
+| **Google** | **Google Cybersecurity Certificate** | Credential ID: `P34KOVQ3ZEWA` (SIEM, Python, Incident Response) |
+| **Meta** | **Meta Front-End Developer Certificate** | Credential ID: `54B52CBE26FF` (Web Architecture & Secure UI) |
 
 ---
 
-## 🏆 FEATURED PROJECTS
+## Live Telemetry & GitHub Activity
 
-### 1. `security-automation` — PentestFlow Recon Command Center
-- **One-line Description:** An event-driven security orchestration dashboard for automated attack surface reconnaissance.
-- **Problem Solved:** Replaces slow manual reconnaissance across multi-domain target scopes with automated asset indexing.
-- **Technologies Used:** Python (Asyncio), Go, TypeScript, Next.js, Spring Boot, WebSockets, Docker.
-- **Key Results:** Reduced initial target discovery time by 75% while cataloging 5,000+ domain assets automatically.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/security-automation](https://github.com/KALEESWARANS-CYBER00/security-automation)
-
----
-
-### 2. `web-security-toolkit` — VulnRadar API Vulnerability Scanner
-- **One-line Description:** A modular Python vulnerability assessment engine tailored for REST and GraphQL APIs.
-- **Problem Solved:** Minimizes false positives from generic commercial scanners by applying AST code analysis and custom payload suites.
-- **Technologies Used:** Python, Burp Suite API, Docker, PostgreSQL, React, OpenAPI Specs.
-- **Key Results:** Identified SQLi, Stored XSS, and BOLA flaws across 20+ staging environments with under 3% false positives.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/web-security-toolkit](https://github.com/KALEESWARANS-CYBER00/web-security-toolkit)
-
----
-
-### 3. `red-team-labs` — Active Directory Adversary Emulation Lab
-- **One-line Description:** An IaC automated enterprise network environment for simulating Windows Active Directory attack chains.
-- **Problem Solved:** Provides a safe, multi-domain lab to test Kerberos attacks, GPO abuse, and SIEM detection rules.
-- **Technologies Used:** Windows Server 2022, Terraform, BloodHound, Mimikatz, Impacket, Security Onion.
-- **Key Results:** Documented domain escalation paths from standard domain user to Domain Admin with associated SIEM detection signatures.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/red-team-labs](https://github.com/KALEESWARANS-CYBER00/red-team-labs)
-
----
-
-### 4. `secure-auth-api` — Zero-Trust Identity Gateway
-- **One-line Description:** A standalone microservice authentication gateway incorporating zero-trust access control.
-- **Problem Solved:** Defends authentication endpoints against token replay, algorithm switching, and credential stuffing attacks.
-- **Technologies Used:** Node.js, TypeScript, Redis, PostgreSQL, Docker, Jest, OAuth 2.0 / OIDC.
-- **Key Results:** Delivered sub-15ms authentication latency while enforcing RS256 token rotation and Redis session revocation.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/secure-auth-api](https://github.com/KALEESWARANS-CYBER00/secure-auth-api)
-
----
-
-### 5. `ctf-writeups` — CTF Solutions & Exploitation Notes
-- **One-line Description:** Structured vulnerability write-ups and technical walkthroughs for CTF machines.
-- **Problem Solved:** Documents reproducible exploit chains and mitigation strategies for learning and audit references.
-- **Technologies Used:** Markdown, Python, Burp Suite, Ghidra, GDB, PwnTools.
-- **Key Results:** Published 50+ challenge write-ups detailing Linux/Windows privilege escalation and web vulnerabilities.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/ctf-writeups](https://github.com/KALEESWARANS-CYBER00/ctf-writeups)
-
----
-
-### 6. `cyber-portfolio` — Cybersecurity Portfolio Website
-- **One-line Description:** An interactive dark-themed web portfolio showcasing projects and security metrics.
-- **Problem Solved:** Offers hiring managers an interactive visual platform to review projects, code, and live metrics.
-- **Technologies Used:** React, Next.js, TypeScript, TailwindCSS, Vercel.
-- **Key Results:** Achieved 100/100 Lighthouse performance scores and dynamic project rendering.
-- **Repository Link:** [https://github.com/KALEESWARANS-CYBER00/cyber-portfolio](https://github.com/KALEESWARANS-CYBER00/cyber-portfolio)
-
----
-
-## 🧪 LABS & CTF
-
-| Platform / Lab | Skills Learned | Tools Used | Documentation Link |
-| :--- | :--- | :--- | :--- |
-| **Hack The Box** | Web exploitation, Linux & Windows PrivEsc, Buffer Overflows | Burp Suite, Nmap, Metasploit, GDB | [HTB Notes](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
-| **TryHackMe** | Offensive security paths, Network pentesting, Cyber defense | Wireshark, Gobuster, FFUF, Hydra | [THM Notes](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
-| **PicoCTF** | Cryptography analysis, Forensics, Reverse engineering | Ghidra, CyberChef, PwnTools | [PicoCTF Writeups](https://github.com/KALEESWARANS-CYBER00/ctf-writeups) |
-| **Home Labs** | SIEM log analysis, Enterprise SOC simulation, Firewalls | Security Onion, PfSense, Proxmox | [Home Lab Docs](https://github.com/KALEESWARANS-CYBER00/red-team-labs) |
-| **Active Directory Labs** | Kerberoasting, DCSync, Trust exploitation, BloodHound mapping | BloodHound, Mimikatz, Rubeus | [AD Lab Docs](https://github.com/KALEESWARANS-CYBER00/red-team-labs) |
-
----
-
-# 🛠️ Tech Stack
-
-## 💻 Languages
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,php,bash,powershell&perline=8" />
-</p>
-
-## 🌐 Full-Stack Development
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,vue,nodejs,express,fastapi,django,spring&perline=8" />
-</p>
-
-## 🗄️ Databases
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,elasticsearch,firebase&perline=8" />
-</p>
-
-## 🌐 Networking & Systems
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,windows,bash,powershell&perline=8" />
-</p>
-
-## ⚔️ Offensive Security
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,kali,bash,powershell&perline=8" />
-</p>
-
-**Security Tools**
-
-`Nmap` · `Burp Suite` · `Metasploit` · `Wireshark` · `Nuclei` · `ffuf` ·
-`Gobuster` · `SQLmap` · `Hydra` · `Hashcat` · `John the Ripper` ·
-`Impacket` · `NetExec` · `Responder` · `BloodHound` · `Amass` · `Subfinder`
-
-## 🔴 Red Teaming
-
-`Active Directory` · `Kerberos` · `NTLM` · `LDAP` · `SMB` · `BloodHound` ·
-`Impacket` · `NetExec` · `PowerShell` · `C2` · `OPSEC` · `MITRE ATT&CK`
-
-## 💀 Exploit Development
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=c,python,assembly,gdb&perline=8" />
-</p>
-
-`x86` · `x64` · `ARM` · `GDB` · `Ghidra` · `pwndbg` · `pwntools` ·
-`WinDbg` · `Buffer Overflow` · `Heap Exploitation` · `Fuzzing`
-
-## 🔬 Reverse Engineering
-
-`Ghidra` · `GDB` · `WinDbg` · `Assembly` · `x86/x64` · `PE` · `ELF` ·
-`Static Analysis` · `Dynamic Analysis` · `Disassembly` · `Decompilation`
-
-## ☁️ Cloud
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=aws&perline=8" />
-</p>
-
-`AWS IAM` · `EC2` · `S3` · `VPC` · `Lambda` · `CloudTrail` ·
-`CloudWatch` · `KMS` · `Secrets Manager`
-
-## 🐳 DevOps / DevSecOps
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,nginx&perline=8" />
-</p>
-
-`GitHub Actions` · `GitLab CI/CD` · `Nginx` · `CI/CD` ·
-`SAST` · `DAST` · `SCA` · `Container Security`
-
-## 📊 Security Operations
-
-`SIEM` · `SOC` · `EDR` · `XDR` · `IDS/IPS` · `Splunk` · `Wazuh` ·
-`Suricata` · `Sysmon` · `YARA` · `Sigma`
-
-## 🔐 Cryptography
-
-`AES` · `RSA` · `MD5` · `SHA-1` · `SHA-2` · `SHA-3` · `TLS/SSL` ·
-`PKI` · `Hashing` · `HMAC` · `Digital Signatures`
-
-## 🧪 Security Research
-
-`CVE Research` · `Vulnerability Research` · `PoC Development` ·
-`Fuzzing` · `Reverse Engineering` · `Malware Analysis` ·
-`Patch Diffing` · `Root Cause Analysis` · `OSINT`
-
-## 🏴‍☠️ Platforms
-
-`Hack The Box` · `TryHackMe` · `PortSwigger Web Security Academy` ·
-`OverTheWire` · `PicoCTF` · `CTFtime` · `VulnHub` · `Proving Grounds`
-
-
-
-
----
-
-## 📊 GITHUB STATS
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+<div align="center">
+  <img height="155" src="https://github-readme-stats.vercel.app/api?username=KALEESWARANS-CYBER00&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
   &nbsp;
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
+  <img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KALEESWARANS-CYBER00&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=KALEESWARANS-CYBER00&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
-</p>
+</div>
 
 ---
 
-## 📜 ACHIEVEMENTS & MILESTONES
+<a id="direct-channels"></a>
+## Secure Correspondence & Direct Channels
 
-- 🛠️ **[X]+ Security & Software Projects** built and open-sourced.
-- 🧪 **[Y]+ Enterprise Security Labs** deployed and documented.
-- 📖 **[Z]+ CTF Machine Write-ups** published.
-- 📜 **Security Certifications:** eJPT (Junior Penetration Tester), Security+ in preparation.
-- 🤝 **Open-Source Contributions:** Active maintainer of cybersecurity tools and automation scripts.
+Direct channels for technical discussions, vulnerability research collaboration, security audits, and full-time security engineering roles:
 
----
+| Channel | Direct Endpoint | Action / Verification |
+| :--- | :--- | :--- |
+| **Official Email** | `kaleeswaran.bcy24@rathinam.in` | [Open Mail Client](mailto:kaleeswaran.bcy24@rathinam.in?subject=Security%20Engineering%20Inquiry) • Verified |
+| **Direct Telephone** | `+91 6374892220` | [Initiate Call](tel:+916374892220) • Verified |
+| **LinkedIn Profile** | `linkedin.com/in/kaleeswarans25` | [Connect on LinkedIn](https://www.linkedin.com/in/kaleeswarans25/) • Professional Network |
+| **Security Repositories** | `github.com/KALEESWARANS-CYBER00` | [Explore GitHub](https://github.com/KALEESWARANS-CYBER00) • Open-Source Work |
+| **Technical Practice** | `tryhackme.com/p/kalees` | [Inspect Profile](https://tryhackme.com/p/kalees) • Top 4% Rank |
+| **Problem Solving** | `leetcode.com/u/kaleeswaran/` | [Inspect Solutions](https://leetcode.com/u/kaleeswaran/) • 281 Solved |
 
-## 🎯 CURRENT FOCUS
+<br />
 
-- ☁️ **Learning Cloud Security:** AWS & Azure security posture management and IAM policy auditing.
-- ⚙️ **Building Security Tools:** Developing custom Python and Go network recon tools.
-- 🏰 **Practicing Active Directory:** Practicing advanced domain trust escalation attack chains.
-- 🚩 **Solving CTFs:** Consistently solving web and privilege escalation challenges on Hack The Box and TryHackMe.
-
----
-
-## 🤝 CONNECT
-
-<p align="center">
-  <a href="https://linkedin.com/in/KALEESWARANS-CYBER00" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://tryhackme.com/p/KALEESWARANS-CYBER00" target="_blank">
-    <img src="https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=white" alt="TryHackMe" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.hackthebox.com/profile/KALEESWARANS-CYBER00" target="_blank">
-    <img src="https://img.shields.io/badge/Hack_The_Box-9FEF00?style=flat-square&logo=hackthebox&logoColor=black" alt="Hack The Box" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:kaleeswaran.cybersecurity@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
-
----
-
-<p align="center">
-  <sub>Designed & Developed by <b>Kaleeswaran S</b> (@KALEESWARANS-CYBER00)</sub>
-</p>
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-
-
-
-
-
-
-
-# 🛠️ Tech Stack
-
-<table width="100%">
-
-  <tr>
-    <td width="25%"><strong>💻 Programming & Scripting</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,php,bash,powershell&perline=8" />
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🌐 Frontend</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,vue,bootstrap,vite&perline=8" />
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>⚙️ Backend</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django,spring&perline=8" />
-      <br><br>
-      <code>REST API</code> · <code>WebSockets</code> · <code>Microservices</code> ·
-      <code>Authentication</code> · <code>Authorization</code> · <code>OAuth 2.0</code> · <code>JWT</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🗄️ Databases</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=postgres,mysql,mariadb,mongodb,redis,elasticsearch,firebase&perline=8" />
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🌐 Networking</strong></td>
-    <td>
-      <code>OSI</code> · <code>TCP/IP</code> · <code>IPv4</code> · <code>IPv6</code> ·
-      <code>Subnetting</code> · <code>CIDR</code> · <code>VLAN</code> · <code>ARP</code> ·
-      <code>ICMP</code> · <code>TCP</code> · <code>UDP</code> · <code>DNS</code> ·
-      <code>DHCP</code> · <code>HTTP</code> · <code>HTTPS</code> · <code>TLS/SSL</code> ·
-      <code>SSH</code> · <code>FTP/SFTP</code> · <code>SMTP</code> · <code>SNMP</code> ·
-      <code>LDAP</code> · <code>SMB</code> · <code>Kerberos</code> · <code>Routing</code> ·
-      <code>NAT</code> · <code>Firewalls</code> · <code>VPN</code> · <code>Proxy</code> ·
-      <code>Network Segmentation</code>
-      <br><br>
-      <code>Wireshark</code> · <code>tcpdump</code> · <code>Nmap</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🛡️ Cybersecurity Fundamentals</strong></td>
-    <td>
-      <code>CIA Triad</code> · <code>Threat Modeling</code> · <code>Risk Assessment</code> ·
-      <code>Vulnerability Management</code> · <code>Security Architecture</code> ·
-      <code>Identity & Access Management</code> · <code>Authentication</code> ·
-      <code>Authorization</code> · <code>Cryptography</code> · <code>Hashing</code> ·
-      <code>PKI</code> · <code>Digital Signatures</code> · <code>Certificates</code> ·
-      <code>Secrets Management</code> · <code>Security Logging</code> ·
-      <code>Incident Response</code> · <code>Digital Forensics</code> ·
-      <code>Malware Analysis</code> · <code>Security Monitoring</code> ·
-      <code>MITRE ATT&CK</code> · <code>Cyber Kill Chain</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🌐 Web Application Security</strong></td>
-    <td>
-      <code>OWASP Top 10</code> · <code>SQL Injection</code> ·
-      <code>Cross-Site Scripting</code> · <code>CSRF</code> · <code>SSRF</code> ·
-      <code>IDOR</code> · <code>BOLA</code> · <code>Command Injection</code> ·
-      <code>SSTI</code> · <code>XXE</code> · <code>Path Traversal</code> ·
-      <code>File Inclusion</code> · <code>File Upload</code> ·
-      <code>Authentication Bypass</code> · <code>Authorization Bypass</code> ·
-      <code>Session Attacks</code> · <code>JWT Attacks</code> · <code>OAuth Security</code> ·
-      <code>CORS</code> · <code>HTTP Request Smuggling</code> ·
-      <code>HTTP Response Splitting</code> · <code>Prototype Pollution</code> ·
-      <code>Race Conditions</code> · <code>Business Logic</code> ·
-      <code>API Security</code> · <code>GraphQL Security</code> ·
-      <code>WebSocket Security</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>⚔️ Penetration Testing</strong></td>
-    <td>
-      <code>Passive Recon</code> · <code>Active Recon</code> · <code>OSINT</code> ·
-      <code>Subdomain Enumeration</code> · <code>DNS Enumeration</code> ·
-      <code>Port Scanning</code> · <code>Service Enumeration</code> ·
-      <code>Technology Fingerprinting</code> · <code>Attack Surface Mapping</code>
-      <br><br>
-      <code>Nmap</code> · <code>Masscan</code> · <code>Amass</code> · <code>Subfinder</code> ·
-      <code>httpx</code> · <code>Gobuster</code> · <code>ffuf</code> ·
-      <code>Feroxbuster</code> · <code>Nikto</code> · <code>Nuclei</code> ·
-      <code>WhatWeb</code> · <code>Burp Suite</code> · <code>Metasploit</code> ·
-      <code>SQLmap</code> · <code>Netcat</code> · <code>Responder</code> ·
-      <code>Impacket</code> · <code>NetExec</code> · <code>CrackMapExec</code> ·
-      <code>Hydra</code> · <code>Hashcat</code> · <code>John the Ripper</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🔴 Red Teaming</strong></td>
-    <td>
-      <code>Reconnaissance</code> · <code>Initial Access</code> · <code>Execution</code> ·
-      <code>Persistence</code> · <code>Privilege Escalation</code> ·
-      <code>Defense Evasion</code> · <code>Credential Access</code> ·
-      <code>Discovery</code> · <code>Lateral Movement</code> · <code>Collection</code> ·
-      <code>Command & Control</code> · <code>Exfiltration</code>
-      <br><br>
-      <code>Active Directory Fundamentals</code> · <code>Domain Enumeration</code> ·
-      <code>SMB</code> · <code>Credential Dumping</code> · <code>BloodHound</code>
-      <br><br>
-      <code>C2 Architecture</code> · <code>C2 Infrastructure</code> ·
-      <code>Payload Development</code> · <code>HTTP/HTTPS C2</code> · <code>Metasploit</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🐧 Linux Security</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,bash&perline=8" />
-      <br><br>
-      <code>Linux Fundamentals</code> · <code>Linux Administration</code> ·
-      <code>Linux Internals</code> · <code>Processes</code> · <code>Permissions</code> ·
-      <code>File Systems</code> · <code>Users & Groups</code> · <code>Services</code> ·
-      <code>Cron Jobs</code> · <code>Systemd</code> · <code>Environment Variables</code> ·
-      <code>SSH</code> · <code>Sudo</code> · <code>Capabilities</code> ·
-      <code>SUID/SGID</code> · <code>Linux Privilege Escalation</code> ·
-      <code>Bash Scripting</code> · <code>Kernel Fundamentals</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🪟 Windows Security</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=windows,powershell&perline=8" />
-      <br><br>
-      <code>Windows Fundamentals</code> · <code>Windows Administration</code> ·
-      <code>Windows Internals</code> · <code>PowerShell</code> · <code>CMD</code> ·
-      <code>Registry</code> · <code>Services</code> · <code>Scheduled Tasks</code> ·
-      <code>Windows Event Logs</code> · <code>Sysmon</code> · <code>WMI</code> ·
-      <code>WinRM</code> · <code>Windows Privilege Escalation</code> ·
-      <code>DLL Concepts</code> · <code>PE Format</code> · <code>LSASS</code> · <code>DPAPI</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>💀 Exploit Development</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=c,cpp&perline=8" />
-      <br><br>
-      <code>Assembly</code> · <code>x86</code> · <code>x64</code> · <code>ARM</code> ·
-      <code>Buffer Overflow</code> · <code>Stack Overflow</code> ·
-      <code>Heap Exploitation</code> · <code>Fuzzing</code>
-      <br><br>
-      <code>GDB</code> · <code>Ghidra</code> · <code>pwndbg</code> ·
-      <code>pwntools</code> · <code>WinDbg</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🔬 Reverse Engineering</strong></td>
-    <td>
-      <code>Static Analysis</code> · <code>Dynamic Analysis</code> ·
-      <code>Disassembly</code> · <code>Decompilation</code> · <code>Debugging</code> ·
-      <code>Binary Analysis</code> · <code>Malware Analysis</code> ·
-      <code>ELF Analysis</code> · <code>PE Analysis</code> · <code>Assembly</code> ·
-      <code>Function Analysis</code> · <code>Control Flow</code> ·
-      <code>API Analysis</code> · <code>String Analysis</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>☁️ Cloud Security</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=aws&perline=8" />
-      <br><br>
-      <code>IAM</code> · <code>EC2</code> · <code>S3</code> · <code>VPC</code> ·
-      <code>Lambda</code> · <code>CloudTrail</code> · <code>CloudWatch</code> ·
-      <code>KMS</code> · <code>Secrets Manager</code> · <code>Cloud IAM</code> ·
-      <code>Cloud Networking</code> · <code>Container Security</code> ·
-      <code>Serverless Security</code> · <code>Cloud Misconfigurations</code> ·
-      <code>CSPM</code> · <code>Cloud Incident Response</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🐳 DevOps / DevSecOps</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=git,github,gitlab,docker,nginx&perline=8" />
-      <br><br>
-      <code>GitHub Actions</code> · <code>GitLab CI/CD</code> ·
-      <code>Nginx</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>📊 Blue Team / Detection</strong></td>
-    <td>
-      <code>SIEM</code> · <code>SOC Fundamentals</code> · <code>Log Analysis</code> ·
-      <code>Threat Hunting</code> · <code>EDR</code> · <code>XDR</code> ·
-      <code>IDS</code> · <code>IPS</code> · <code>Splunk</code> · <code>Wazuh</code> ·
-      <code>Suricata</code> · <code>Sysmon</code> · <code>YARA</code> · <code>Sigma</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🔐 Cryptography</strong></td>
-    <td>
-      <code>Encoding vs Encryption</code> · <code>Hashing</code> · <code>MD5</code> ·
-      <code>SHA-1</code> · <code>SHA-2</code> · <code>SHA-3</code> · <code>AES</code> ·
-      <code>DES/3DES</code> · <code>RSA</code> · <code>TLS</code> ·
-      <code>Key Management</code> · <code>Password Hashing</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🧪 Security Research</strong></td>
-    <td>
-      <code>CVE Research</code> · <code>Vulnerability Research</code> ·
-      <code>Proof of Concept Development</code> · <code>Fuzzing</code> ·
-      <code>Static Analysis</code> · <code>Dynamic Analysis</code> ·
-      <code>Reverse Engineering</code> · <code>Root Cause Analysis</code> ·
-      <code>Patch Diffing</code> · <code>Exploit Mitigation Analysis</code> ·
-      <code>Malware Analysis</code> · <code>Threat Intelligence</code> · <code>OSINT</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🖥️ Operating Systems</strong></td>
-    <td>
-      <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,windows,apple,android&perline=8" />
-      <br><br>
-      <code>Virtualization</code> · <code>VMware</code> · <code>VirtualBox</code> · <code>Hyper-V</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>🧰 Security Labs & Platforms</strong></td>
-    <td>
-      <code>Hack The Box</code> · <code>TryHackMe</code> ·
-      <code>PortSwigger Web Security Academy</code> · <code>OverTheWire</code> ·
-      <code>PicoCTF</code> · <code>CTFtime</code> · <code>VulnHub</code> ·
-      <code>Proving Grounds</code>
-    </td>
-  </tr>
-
-  <tr>
-    <td><strong>📚 Security Methodologies</strong></td>
-    <td>
-      <code>OWASP</code> · <code>MITRE ATT&CK</code> · <code>PTES</code> ·
-      <code>NIST</code> · <code>CIS Controls</code> · <code>Cyber Kill Chain</code> ·
-      <code>Threat Modeling</code> · <code>STRIDE</code> · <code>CVSS</code> ·
-      <code>CWE</code> · <code>CVE</code>
-    </td>
-  </tr>
-
-</table>
-
- -->
+<div align="center">
+  <code>SECURE CORRESPONDENCE • PGP AVAILABLE ON REQUEST • RESPONSE SLA &lt; 24H</code>
+  <br /><br />
+  <sub>Designed & Engineered by <b>Kaleeswaran S</b> (@KALEESWARANS-CYBER00)</sub>
+</div>
