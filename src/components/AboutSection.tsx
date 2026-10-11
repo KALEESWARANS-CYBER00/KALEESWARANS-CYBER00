@@ -656,7 +656,7 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="lg:col-span-6 xl:col-span-6 flex flex-col items-start drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+            <div className="lg:col-span-7 xl:col-span-7 flex flex-col items-start drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
               
               <h2 className="text-3xl xs:text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black tracking-headline text-[#f7f4ee] leading-[1.04] sm:leading-[0.98] mb-6 sm:mb-8">
                 <span className="block overflow-hidden py-0.5">
@@ -681,11 +681,17 @@ export default function AboutSection() {
                 </span>
               </h2>
 
-              <div className="space-y-4 text-sm sm:text-base lg:text-[15px] xl:text-base text-[#d5cec5] font-light leading-relaxed mb-6 sm:mb-8">
-                <p ref={bioP1Ref}>
+              <div className="space-y-6 sm:space-y-7 w-full max-w-3xl lg:max-w-none mb-7 sm:mb-9">
+                <p
+                  ref={bioP1Ref}
+                  className="text-base sm:text-lg lg:text-[20px] xl:text-[21px] 2xl:text-[22px] text-[#f7f4ee] font-normal leading-[1.65] sm:leading-[1.7] lg:leading-[1.75] tracking-[-0.01em]"
+                >
                   I am Kaleeswaran S — a Red Team Security Specialist, Cloud Security Architect, and Full-Stack Software Engineer focused on understanding how systems fail, how adversaries operate, and how to engineer resilient software that withstands real-world threats.
                 </p>
-                <p ref={bioP2Ref} className="text-[#a8a29e] text-xs sm:text-sm lg:text-[14px] xl:text-base">
+                <p
+                  ref={bioP2Ref}
+                  className="text-sm sm:text-base lg:text-[17.5px] xl:text-[18px] 2xl:text-[18.5px] text-[#d5cec5] font-light leading-[1.7] sm:leading-[1.75] lg:leading-[1.75]"
+                >
                   Ranked in the top 4% globally on TryHackMe, my technical foundation spans vulnerability research, exploit development, bug bounty engagements, cloud infrastructure defense, and hands-on systems engineering in Python, Java, Bash, Next.js, and modern distributed environments. Rather than viewing security as an afterthought or a compliance checkbox, I treat security as an architectural discipline woven into every layer of software.
                 </p>
               </div>
@@ -711,9 +717,9 @@ export default function AboutSection() {
 
             <div
               ref={desktopPortraitWrapperRef}
-              className="hidden lg:flex lg:col-span-6 xl:col-span-6 justify-center lg:justify-end items-center perspective-[1000px]"
+              className="hidden lg:flex lg:col-span-5 xl:col-span-5 justify-center lg:justify-end items-center perspective-[1000px]"
             >
-              <div className="relative w-full max-w-[480px] xl:max-w-[530px]">
+              <div className="relative w-full max-w-[430px] xl:max-w-[470px]">
                 <div
                   ref={portraitFrameRef}
                   onMouseMove={handleMouseMove}

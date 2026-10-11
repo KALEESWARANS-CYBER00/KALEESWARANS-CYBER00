@@ -413,7 +413,6 @@ export default function CyberCrosshairCursor() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-full overflow-visible"
-        style={{ filter: 'drop-shadow(0 0 1.5px rgba(239, 68, 68, 0.75))' }}
       >
         {/* ============================================================== */}
         {/* AWM 4X SNIPER SCOPE RETICLE (ICONIC CIRCLE SYMBOL)             */}

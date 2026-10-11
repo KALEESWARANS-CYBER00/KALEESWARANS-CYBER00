@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { ArrowUpRight } from 'lucide-react';
 import HeroInkReveal from './HeroInkReveal';
+import FolderFloatWrapper from './FolderFloatWrapper';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +18,8 @@ export default function Hero() {
   const portraitImgRef = useRef<HTMLImageElement>(null);
   const textFrame1Ref = useRef<HTMLDivElement>(null);
   const textFrame2Ref = useRef<HTMLDivElement>(null);
+  const folderFloatRef = useRef<HTMLDivElement>(null);
 
-  // Line reveal refs for Frame 01
   const line1Ref = useRef<HTMLSpanElement>(null);
   const line2Ref = useRef<HTMLSpanElement>(null);
   const subtextRef = useRef<HTMLDivElement>(null);
@@ -29,11 +30,9 @@ export default function Hero() {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const ctx = gsap.context(() => {
-      // 1. Initial Page Load Reveal
       const introTl = gsap.timeline({ delay: 0.1 });
 
       if (!prefersReducedMotion) {
-        // Background scale & opacity
         introTl.fromTo(
           bgWrapperRef.current,
           { opacity: 0, scale: 1.05 },
@@ -41,7 +40,6 @@ export default function Hero() {
           0
         );
 
-        // Headline 2 lines vertical mask reveal
         introTl.fromTo(
           [line1Ref.current, line2Ref.current],
           { yPercent: 105, opacity: 0 },
@@ -55,7 +53,6 @@ export default function Hero() {
           0.2
         );
 
-        // Disciplines strip
         introTl.fromTo(
           subtextRef.current,
           { opacity: 0, y: 10 },
@@ -63,7 +60,6 @@ export default function Hero() {
           0.5
         );
 
-        // Narrative bio
         introTl.fromTo(
           descRef.current,
           { opacity: 0, y: 12 },
@@ -71,13 +67,21 @@ export default function Hero() {
           0.6
         );
 
-        // Action CTAs
         introTl.fromTo(
           ctaRef.current,
           { opacity: 0, y: 12 },
           { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' },
           0.7
         );
+
+        if (folderFloatRef.current) {
+          introTl.fromTo(
+            folderFloatRef.current,
+            { autoAlpha: 0, y: 15 },
+            { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out' },
+            0.75
+          );
+        }
       } else {
         gsap.set(
           [
@@ -90,9 +94,11 @@ export default function Hero() {
           ],
           { opacity: 1, y: 0, scale: 1 }
         );
+        if (folderFloatRef.current) {
+          gsap.set(folderFloatRef.current, { autoAlpha: 1, y: 0 });
+        }
       }
 
-      // 2. Pinned Scroll Camera Pan & Content Transition
       if (!prefersReducedMotion && containerRef.current && heroPinRef.current) {
         const isDesktop = window.innerWidth >= 1024;
 
@@ -107,7 +113,6 @@ export default function Hero() {
           },
         });
 
-        // Frame 01 text slides up slightly and fades
         scrollTl.to(
           textFrame1Ref.current,
           {
@@ -119,7 +124,20 @@ export default function Hero() {
           0
         );
 
-        // Background camera motion linked to scroll on both desktop and mobile
+        if (folderFloatRef.current) {
+          scrollTl.fromTo(
+            folderFloatRef.current,
+            { autoAlpha: 1, y: 0 },
+            {
+              y: -20,
+              autoAlpha: 0,
+              ease: 'power2.in',
+              duration: 0.32,
+            },
+            0
+          );
+        }
+
         if (bgWrapperRef.current) {
           if (isDesktop) {
             scrollTl.fromTo(
@@ -138,7 +156,6 @@ export default function Hero() {
           }
         }
 
-        // Frame 02 text fades and settles in
         scrollTl.fromTo(
           textFrame2Ref.current,
           {
@@ -161,17 +178,11 @@ export default function Hero() {
 
   return (
     <div ref={containerRef} id="hero" className="relative w-full bg-[#09090b]">
-      {/* Pinned Viewport Container */}
       <div
         ref={heroPinRef}
         className="relative w-full h-[100svh] overflow-hidden flex flex-col lg:flex-row items-center justify-between lg:justify-center"
       >
-        {/* ============================================================== */}
-        {/* UNIFIED FULL-SCREEN BACKGROUND CAMERA LAYER                     */}
-        {/* Seamless full background image for mobile and desktop           */}
-        {/* ============================================================== */}
         <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden select-none">
-          {/* Main Background Image Container */}
           <div
             ref={bgWrapperRef}
             className="absolute inset-0 w-full h-full lg:w-[124%] lg:-left-[12%]"
@@ -183,41 +194,26 @@ export default function Hero() {
               alt="Kaleeswaran S - Professional Portrait"
               className="w-full h-full object-contain lg:object-cover object-top lg:object-center pt-14 sm:pt-16 lg:pt-0"
             />
-            {/* Organic Ink-like Cursor Hover Reveal (Color Shift via Blend Mode) */}
             <HeroInkReveal
               bgWrapperRef={bgWrapperRef}
               heroContainerRef={heroPinRef}
             />
           </div>
 
-          {/* Desktop: Luminous left gradient veil for Frame 01 text readability */}
           <div className="hidden lg:block absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r from-[#09090b] via-[#09090b]/75 to-transparent pointer-events-none" />
-
-          {/* Desktop: Luminous right gradient veil for Frame 02 text readability */}
           <div className="hidden lg:block absolute inset-y-0 right-0 w-[60%] bg-gradient-to-l from-[#09090b] via-[#09090b]/80 to-transparent pointer-events-none" />
-
-          {/* Mobile: Seamless atmospheric fade from portrait into lower content area */}
           <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-[#09090b]/30 via-transparent via-40% to-[#09090b] pointer-events-none" />
 
-          {/* Top and Bottom Atmospheric Fades */}
           <div className="absolute top-0 inset-x-0 h-16 sm:h-24 bg-gradient-to-b from-[#09090b]/90 via-[#09090b]/30 to-transparent z-10 pointer-events-none" />
           <div className="absolute bottom-0 inset-x-0 h-16 sm:h-20 bg-gradient-to-t from-[#09090b]/90 to-transparent z-10 pointer-events-none" />
         </div>
 
-        {/* ============================================================== */}
-        {/* CONTENT STAGE                                                  */}
-        {/* ============================================================== */}
         <div className="relative z-20 w-full px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 h-full flex items-center">
-
-          {/* ============================================================ */}
-          {/* FRAME 01: ATTACKER MINDSET × ENGINEER MINDSET                */}
-          {/* ============================================================ */}
           <div
             ref={textFrame1Ref}
             className="absolute inset-x-4 sm:inset-x-8 md:inset-x-12 lg:inset-x-14 xl:inset-x-16 2xl:inset-x-20 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto max-w-3xl flex flex-col items-start drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]"
             style={{ willChange: 'transform, opacity' }}
           >
-            {/* Headline: I Think Like an Attacker. I Build Like an Engineer. */}
             <h1 className="text-xl xs:text-2xl sm:text-4xl lg:text-7xl xl:text-[5.25rem] font-black text-[#f7f4ee] leading-[1.08] sm:leading-[0.98] tracking-headline mb-2 sm:mb-5">
               <span className="block overflow-hidden py-0.5">
                 <span ref={line1Ref} className="block will-change-transform">
@@ -231,7 +227,6 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Disciplines & Roles Strip */}
             <div
               ref={subtextRef}
               className="flex flex-wrap items-center gap-x-2 gap-y-1 sm:gap-x-3.5 sm:gap-y-2 text-[10px] xs:text-[11px] sm:text-[13px] font-mono tracking-wider uppercase text-[#dfb88e] border-y border-[#c59b6d]/20 py-1.5 sm:py-2.5 mb-2.5 sm:mb-5 max-w-2xl opacity-0"
@@ -247,7 +242,6 @@ export default function Hero() {
               <span className="text-[#f7f4ee]">Full-Stack Engineer</span>
             </div>
 
-            {/* Narrative Bio (Kaleeswaran S) */}
             <p
               ref={descRef}
               className="text-xs sm:text-base lg:text-lg text-[#d5cec5] font-light leading-relaxed max-w-xl mb-3 sm:mb-7 opacity-0"
@@ -255,11 +249,10 @@ export default function Hero() {
               I’m Kaleeswaran S — Red Team Security Specialist, Vulnerability Researcher, and Full-Stack Software Engineer. Ranked in the top 4% globally on TryHackMe, I dissect applications, uncover attack vectors, and engineer resilient systems across offensive security and cloud infrastructure.
             </p>
 
-            {/* Action CTAs */}
             <div ref={ctaRef} className="flex flex-wrap items-center gap-2.5 sm:gap-4 opacity-0">
               <a
                 href="#work"
-                className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-8 py-2.5 sm:py-3.5 bg-[#c59b6d] text-[#09090b] font-mono text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-widest font-bold transition-all duration-300 hover:bg-[#dfb88e] shadow-[0_4px_24px_rgba(197,155,109,0.25)] text-center rounded-sm"
+                className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-8 py-2.5 sm:py-3.5 bg-[#c59b6d] text-[#09090b] font-mono text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-widest font-bold transition-all duration-300 hover:bg-[#dfb88e] text-center rounded-sm"
               >
                 <span>EXPLORE SELECTED WORK</span>
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 sm:group-hover:translate-x-2">
@@ -279,20 +272,29 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ============================================================ */}
-          {/* FRAME 02: CONTINUATION AS USER SCROLLS (FULLY VISIBLE)       */}
-          {/* ============================================================ */}
+          <div
+            ref={folderFloatRef}
+            className="hidden md:flex absolute right-6 lg:right-12 xl:right-16 2xl:right-24 top-[48%] -translate-y-1/2 z-20 pointer-events-auto items-center justify-center"
+            style={{ willChange: 'transform, opacity' }}
+          >
+            <FolderFloatWrapper
+              width={330}
+              height={226}
+              spread={220}
+              lift={44}
+              label="~/security-dossier"
+              sublabel="drwxr-xr-x · 5 files"
+            />
+          </div>
+
           <div
             ref={textFrame2Ref}
             className="absolute inset-x-4 sm:inset-x-8 md:inset-x-12 lg:inset-x-14 xl:inset-x-16 2xl:inset-x-20 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center opacity-0 pointer-events-none drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]"
             style={{ willChange: 'transform, opacity' }}
           >
-            {/* Left Column Spacer (Desktop) */}
             <div className="hidden lg:block lg:col-span-5" />
 
-            {/* Right Column Content */}
             <div className="lg:col-span-7 flex flex-col items-start lg:pl-10 pointer-events-auto">
-              {/* Headline */}
               <h2 className="text-xl xs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-[#f7f4ee] leading-[1.08] sm:leading-[1.02] tracking-headline mb-2 sm:mb-4">
                 <span className="block">EVERY SYSTEM HAS AN</span>
                 <span className="block text-[#c59b6d]">ATTACK SURFACE.</span>
@@ -303,7 +305,6 @@ export default function Hero() {
                 From investigating application flaws, exploit development, and bug bounty research to engineering full-stack platforms and hardening cloud environments, I work across the systems that power modern technology.
               </p>
 
-              {/* Roles & Domain Tags */}
               <div className="flex flex-wrap gap-1.5 sm:gap-2 text-[9px] xs:text-[10px] sm:text-xs font-mono tracking-wider text-[#dfb88e] mb-3 sm:mb-6">
                 <span className="bg-[#121316]/90 border border-white/10 px-2 sm:px-3 py-0.5 sm:py-1.5 rounded">Red Team Operations</span>
                 <span className="bg-[#121316]/90 border border-white/10 px-2 sm:px-3 py-0.5 sm:py-1.5 rounded">Penetration Testing</span>
@@ -323,7 +324,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
