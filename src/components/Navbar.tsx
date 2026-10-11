@@ -8,8 +8,8 @@ import { audioManager } from '@/lib/audio';
 import CommandPalette from '@/components/CommandPalette';
 
 const navLinks = [
-  { name: 'WORK', href: '#work' },
   { name: 'ABOUT', href: '#about' },
+  { name: 'WORK', href: '#work' },
   { name: 'EXPERIENCE', href: '#experience' },
   { name: 'CONTACT', href: '#contact' },
 ];
@@ -118,7 +118,7 @@ export default function Navbar() {
             : 'bg-transparent border-b border-white/[0.05] py-5 sm:py-6'
         )}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-12 lg:px-16 flex items-center justify-between">
+        <div className="w-full px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 flex items-center justify-between">
           {/* Left: Brand Identity & Live Status Beacon */}
           <div className="flex items-center gap-3 sm:gap-6">
             <a
