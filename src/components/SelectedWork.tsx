@@ -1,8 +1,14 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { ArrowUpRight, Github, Search, Filter, Cpu, ShieldAlert, Layers } from 'lucide-react';
+import { useState, useMemo, useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { ArrowUpRight, Github, Search, Cpu, ShieldAlert, Terminal, Layers } from 'lucide-react';
 import ProjectModal, { ProjectSpec } from '@/components/ProjectModal';
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const projects: ProjectSpec[] = [
   {
@@ -100,6 +106,12 @@ export default function SelectedWork() {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeModalProject, setActiveModalProject] = useState<ProjectSpec | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const rootRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const progressRef = useRef<HTMLSpanElement>(null);
 
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
@@ -117,137 +129,347 @@ export default function SelectedWork() {
     });
   }, [selectedCategory, searchQuery]);
 
+  // GSAP Horizontal Scrolling Gallery with ScrollTrigger Pinning
+  useEffect(() => {
+    if (!stageRef.current || !trackRef.current || filteredProjects.length === 0) return;
+
+    const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
+
+      mm.add(
+        {
+          desktop: '(min-width: 768px)',
+          motion: '(prefers-reduced-motion: no-preference)',
+        },
+        (context) => {
+          const { conditions } = context;
+          if (!conditions?.motion) return;
+
+          const stage = stageRef.current;
+          const track = trackRef.current;
+          if (!stage || !track) return;
+
+          const panels = gsap.utils.toArray<HTMLElement>('.gallery-panel');
+
+          // Fallback on mobile/touch: smooth vertical entrance without pinning
+          if (!conditions?.desktop) {
+            panels.forEach((p) => {
+              gsap.from(p, {
+                y: 35,
+                autoAlpha: 0,
+                duration: 0.8,
+                scrollTrigger: {
+                  trigger: p,
+                  start: 'top 90%',
+                  once: true,
+                },
+              });
+            });
+            return;
+          }
+
+          // Desktop: Pin vertical scroll and translate horizontal track
+          const getScrollDist = () => Math.max(0, track.scrollWidth - stage.clientWidth);
+
+          const horizontalTween = gsap.to(track, {
+            x: () => -getScrollDist(),
+            ease: 'none',
+            scrollTrigger: {
+              trigger: stage,
+              start: 'top 70px',
+              end: () => `+=${getScrollDist()}`,
+              pin: true,
+              scrub: 0.85,
+              invalidateOnRefresh: true,
+              onUpdate: (self) => {
+                const total = filteredProjects.length;
+                if (total > 0) {
+                  const idx = Math.min(total - 1, Math.floor(self.progress * total));
+                  setCurrentIndex(idx);
+                }
+              },
+            },
+          });
+
+          // Bottom scrub progress bar
+          if (progressRef.current) {
+            gsap.fromTo(
+              progressRef.current,
+              { scaleX: 0 },
+              {
+                scaleX: 1,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: stage,
+                  start: 'top 70px',
+                  end: () => `+=${getScrollDist()}`,
+                  scrub: 0.85,
+                  invalidateOnRefresh: true,
+                },
+              }
+            );
+          }
+
+          // Subtle panel content reveal as each panel enters horizontal view
+          panels.forEach((panel) => {
+            const content = panel.querySelector('.panel-content');
+            if (content) {
+              gsap.from(content, {
+                y: 18,
+                opacity: 0.8,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: panel,
+                  containerAnimation: horizontalTween,
+                  start: 'left right',
+                  end: 'center center',
+                  scrub: true,
+                },
+              });
+            }
+          });
+        },
+        rootRef
+      );
+    }, rootRef);
+
+    return () => ctx.revert();
+  }, [filteredProjects]);
+
   return (
     <section
       id="work"
-      className="py-16 sm:py-32 px-4 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]"
+      ref={rootRef}
+      className="py-16 sm:py-24 bg-[#09090b] relative border-t border-white/[0.07] w-full overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-14">
-          <div>
-            <div className="text-xs font-mono tracking-[0.25em] text-[#c59b6d] uppercase mb-2">
-              DISCIPLINED SYSTEMS & DEFENSIVE TOOLS
-            </div>
-            <h2 className="text-3xl sm:text-6xl font-black tracking-headline text-[#f7f4ee]">
-              SELECTED WORK<span className="text-[#c59b6d]">.</span>
-            </h2>
-          </div>
-          <p className="text-xs sm:text-base text-[#d5cec5] font-light max-w-md leading-relaxed">
-            Security research, technology projects and digital systems I’ve built, explored and engineered.
-          </p>
-        </div>
-
-        {/* Filter Controls & Search Bar */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 sm:pb-8 border-b border-white/10 mb-8">
-          {/* Category Filter Pills */}
-          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
-            {categories.map((cat) => {
-              const isActive = selectedCategory.toLowerCase() === cat.toLowerCase();
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`px-3 py-1.5 rounded text-[11px] font-mono uppercase tracking-wider transition-all duration-200 shrink-0 cursor-pointer ${
-                    isActive
-                      ? 'bg-[#c59b6d] text-[#09090b] font-bold shadow-[0_2px_10px_rgba(197,155,109,0.25)]'
-                      : 'bg-[#121316] text-[#a8a29e] hover:text-[#dfb88e] border border-white/5 hover:border-[#c59b6d]/30'
-                  }`}
-                >
-                  {cat}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Quick Search */}
-          <div className="relative min-w-[200px] sm:min-w-[240px]">
-            <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#a8a29e]" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search stack, threat, or name..."
-              className="w-full bg-[#121316] border border-white/10 rounded px-3 pl-9 py-1.5 text-xs font-mono text-[#f7f4ee] placeholder-[#a8a29e]/50 outline-none focus:border-[#c59b6d] transition-colors"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono text-[#a8a29e] hover:text-[#f7f4ee]"
-              >
-                CLEAR
-              </button>
-            )}
-          </div>
-        </div>
-
-        {/* Editorial Project Rows */}
-        <div className="divide-y divide-white/10 border-b border-white/10">
-          {filteredProjects.length === 0 ? (
-            <div className="py-16 text-center text-xs font-mono text-[#a8a29e]">
-              NO MATCHING PROJECTS FOUND IN THIS CATEGORY.
-            </div>
-          ) : (
-            filteredProjects.map((project) => (
-              <div
-                key={project.id}
-                className="group py-6 sm:py-10 transition-all duration-300 hover:bg-[#121316]/50 px-2 sm:px-6 -mx-2 sm:-mx-6 rounded-lg"
-              >
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center">
-                  {/* Project Name & Category */}
-                  <div className="md:col-span-4">
-                    <h3 className="text-xl sm:text-3xl font-light text-[#f7f4ee] group-hover:text-[#dfb88e] transition-colors tracking-tight mb-1 flex items-center gap-3">
-                      <span>{project.name}</span>
-                    </h3>
-                    <div className="text-xs font-mono text-[#c59b6d] tracking-wider uppercase">
-                      {project.category}
-                    </div>
-                  </div>
-
-                  {/* Short Description & Tags */}
-                  <div className="md:col-span-5 text-xs sm:text-sm font-light text-[#d5cec5] leading-relaxed">
-                    {project.description}
-                    <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.04] text-[#a8a29e] border border-white/[0.05]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Actions: Inspect Spec + GitHub Link */}
-                  <div className="md:col-span-3 flex items-center justify-between md:justify-end gap-3 sm:gap-4">
-                    <button
-                      onClick={() => setActiveModalProject(project)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#181513] border border-[#c59b6d]/30 text-[#dfb88e] hover:bg-[#c59b6d] hover:text-[#09090b] text-[11px] font-mono uppercase tracking-wider transition-all duration-300 font-semibold cursor-pointer"
-                    >
-                      <Cpu className="w-3 h-3" />
-                      <span>INSPECT SPEC</span>
-                    </button>
-
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/10 flex items-center justify-center text-[#d5cec5] hover:border-[#dfb88e] hover:text-[#dfb88e] hover:translate-x-1 transition-all duration-300"
-                      title="Open GitHub Repository"
-                      aria-label={`Open GitHub repository for ${project.name}`}
-                    >
-                      <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                    </a>
-                  </div>
-                </div>
+      <div className="w-full">
+        {/* Section Header (Preserved) */}
+        <div className="px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 mb-8 sm:mb-12">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 mb-8">
+            <div>
+              <div className="text-xs font-mono tracking-[0.25em] text-[#ef4444] uppercase mb-2 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
+                DISCIPLINED SYSTEMS & DEFENSIVE TOOLS
               </div>
-            ))
-          )}
+              <h2 className="text-3xl sm:text-6xl font-black tracking-headline text-[#f7f4ee]">
+                SELECTED WORK<span className="text-[#ef4444]">.</span>
+              </h2>
+            </div>
+            <p className="text-xs sm:text-base text-[#d5cec5] font-light max-w-md leading-relaxed">
+              Security research, technology projects and digital systems I’ve built, explored and engineered.
+            </p>
+          </div>
+
+          {/* Filter Controls & Search Bar */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/10">
+            {/* Category Filter Pills */}
+            <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+              {categories.map((cat) => {
+                const isActive = selectedCategory.toLowerCase() === cat.toLowerCase();
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-3 py-1.5 text-[11px] font-mono uppercase tracking-wider transition-all duration-150 shrink-0 cursor-pointer ${
+                      isActive
+                        ? 'bg-[#ef4444] text-black font-bold shadow-[0_2px_8px_rgba(239,68,68,0.3)]'
+                        : 'bg-[#121316] text-[#a8a29e] hover:text-white border border-white/10 hover:border-[#ef4444]/40'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Quick Search */}
+            <div className="relative min-w-[200px] sm:min-w-[240px]">
+              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#a8a29e]" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search stack, threat, name..."
+                className="w-full bg-[#121316] border border-white/10 px-3 pl-9 py-1.5 text-xs font-mono text-[#f7f4ee] placeholder-[#a8a29e]/50 outline-none focus:border-[#ef4444] transition-colors"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono text-[#a8a29e] hover:text-[#f7f4ee]"
+                >
+                  CLEAR
+                </button>
+              )}
+            </div>
+          </div>
         </div>
 
-        {/* GitHub Full Archive Link */}
-        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/[0.07] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        {/* Empty State */}
+        {filteredProjects.length === 0 ? (
+          <div className="mx-4 sm:mx-8 md:mx-12 lg:mx-14 py-20 text-center text-xs font-mono text-[#a8a29e] border border-white/10 bg-[#0d0e12]">
+            NO MATCHING PROJECTS FOUND IN THIS CATEGORY.
+          </div>
+        ) : (
+          /* ========================================================================= */
+          /* GSAP Horizontal Scrolling Gallery Stage                                   */
+          /* ========================================================================= */
+          <div
+            ref={stageRef}
+            className="gallery-stage relative w-full overflow-hidden flex flex-col justify-center min-h-[580px] h-[calc(100vh-100px)] max-h-[820px]"
+            aria-label="Horizontal projects showcase gallery"
+          >
+            {/* Horizontal Track */}
+            <div
+              ref={trackRef}
+              className="gallery-track flex flex-col md:flex-row items-stretch gap-6 sm:gap-8 lg:gap-10 w-full md:w-max px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16"
+            >
+              {filteredProjects.map((project, index) => (
+                <article
+                  key={project.id}
+                  className="gallery-panel flex-none w-full md:w-[86vw] lg:w-[78vw] max-w-[1140px] h-auto md:h-[68vh] min-h-[480px] max-h-[600px] bg-[#0c0d11] border border-white/10 p-6 sm:p-8 lg:p-10 flex flex-col justify-between select-none"
+                >
+                  <div className="panel-content flex flex-col justify-between h-full">
+                    {/* Top Identity Row */}
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-3 sm:pb-4 mb-4 sm:mb-6">
+                      <div className="flex items-center gap-3">
+                        <span className="flex items-center gap-2 text-[11px] font-mono tracking-widest text-[#ef4444] uppercase bg-[#ef4444]/10 border border-[#ef4444]/30 px-2.5 py-1">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
+                          SYS // 0{index + 1} OF 0{filteredProjects.length}
+                        </span>
+                        <span className="text-xs font-mono text-[#a8a29e] tracking-wider uppercase">
+                          {project.category}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-2 font-mono text-xs">
+                        <span className="text-[#a8a29e]">YEAR:</span>
+                        <span className="px-2 py-0.5 bg-[#14161d] border border-white/10 text-white font-bold">
+                          {project.year}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Main Dual-Column Content */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 my-auto py-2">
+                      {/* Left Column: Project Identity, Description & Stack (7 cols) */}
+                      <div className="lg:col-span-7 flex flex-col justify-center">
+                        <h3 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-3">
+                          {project.name}
+                        </h3>
+                        <p className="text-xs sm:text-sm md:text-base text-[#d5cec5] font-light leading-relaxed mb-5 max-w-2xl">
+                          {project.description}
+                        </p>
+
+                        {/* Technology Stack Tags */}
+                        <div>
+                          <div className="text-[10px] font-mono text-[#a8a29e] tracking-wider uppercase mb-2">
+                            STACK & TELEMETRY:
+                          </div>
+                          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                            {project.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="text-[11px] sm:text-xs font-mono px-2.5 py-1 bg-[#14161d] text-white border border-white/10"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Right Column: Threat Vector & Architecture Telemetry (5 cols) */}
+                      <div className="lg:col-span-5 flex flex-col justify-between bg-[#06070a] border border-white/10 p-5 sm:p-6">
+                        {/* Threat Vector */}
+                        <div className="mb-4">
+                          <div className="flex items-center gap-1.5 text-[11px] font-mono text-[#ef4444] uppercase tracking-wider mb-2">
+                            <ShieldAlert className="w-3.5 h-3.5" />
+                            <span>TARGET THREAT VECTOR</span>
+                          </div>
+                          <p className="text-xs font-mono text-[#cbd5e1] leading-relaxed">
+                            {project.threatVector}
+                          </p>
+                        </div>
+
+                        {/* Core Defense Architecture Steps */}
+                        {project.architecture && project.architecture.length > 0 && (
+                          <div className="border-t border-white/10 pt-3">
+                            <div className="text-[10px] font-mono text-[#a8a29e] uppercase tracking-wider mb-2">
+                              CORE DEFENSE ARCHITECTURE
+                            </div>
+                            <ul className="space-y-1.5">
+                              {project.architecture.slice(0, 3).map((arch, i) => (
+                                <li key={i} className="text-[11px] font-mono text-[#94a3b8] flex items-start gap-2">
+                                  <span className="text-[#ef4444] mt-0.5">▸</span>
+                                  <span className="line-clamp-1">{arch}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Bottom Action Row */}
+                    <div className="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-4 mt-4">
+                      <div className="flex items-center gap-2 text-xs font-mono text-[#a8a29e]">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="text-emerald-400">STATUS: PRODUCTION DEFENSE</span>
+                      </div>
+
+                      <div className="flex items-center gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setActiveModalProject(project)}
+                          className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#ef4444] text-black text-xs font-mono uppercase tracking-wider font-bold transition-all duration-150 hover:bg-white hover:text-black cursor-pointer shadow-[0_2px_10px_rgba(239,68,68,0.25)] active:scale-95"
+                        >
+                          <Cpu className="w-3.5 h-3.5" />
+                          <span>INSPECT SPEC</span>
+                        </button>
+
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#14161d] border border-white/15 text-white hover:border-[#ef4444] hover:text-[#ef4444] text-xs font-mono tracking-wider transition-all duration-150 cursor-pointer"
+                          title="Open GitHub Repository"
+                          aria-label={`Open GitHub repository for ${project.name}`}
+                        >
+                          <Github className="w-3.5 h-3.5" />
+                          <span className="hidden sm:inline">REPO</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Bottom Gallery Progress Status (Hidden on Mobile) */}
+            <div className="gallery-status hidden md:flex items-center justify-between gap-6 px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 pt-5 mt-auto border-t border-white/10 bg-[#09090b]">
+              <div className="flex items-center gap-2 font-mono text-[11px] text-[#a8a29e] uppercase tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444]" />
+                <span>HORIZONTAL DEFENSE ARSENAL</span>
+              </div>
+
+              <div className="flex-1 max-w-md h-[2px] bg-white/10 overflow-hidden">
+                <span
+                  ref={progressRef}
+                  className="block h-full bg-[#ef4444] origin-left"
+                  style={{ transform: 'scaleX(0)' }}
+                />
+              </div>
+
+              <div className="font-mono text-xs font-bold text-white tracking-widest">
+                0{currentIndex + 1} — 0{filteredProjects.length}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* GitHub Full Archive Link (Preserved) */}
+        <div className="px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/[0.07] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <span className="text-[11px] sm:text-xs font-mono text-[#a8a29e]">
             ADDITIONAL EXPERIMENTAL REPOSITORIES & REVERSE ENGINEERING AUDITS
           </span>
@@ -255,7 +477,7 @@ export default function SelectedWork() {
             href="https://github.com/KALEESWARANS-CYBER00"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-[#dfb88e] hover:text-[#f7f4ee] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-[#ef4444] hover:text-white transition-colors group"
           >
             <span>VIEW COMPLETE GITHUB PROFILE</span>
             <Github className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
