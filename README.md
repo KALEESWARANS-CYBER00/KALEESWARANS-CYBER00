@@ -28,8 +28,8 @@
       <img src="https://img.shields.io/badge/EXPLORE-SELECTED%20WORK-c59b6d?style=for-the-badge" alt="Selected Work" />
     </a>
     &nbsp;
-    <a href="#direct-channels">
-      <img src="https://img.shields.io/badge/INITIATE-CONTACT-dfb88e?style=for-the-badge" alt="Contact" />
+    <a href="#technical-competencies">
+      <img src="https://img.shields.io/badge/SKILLS-10%20CATEGORIES-dfb88e?style=for-the-badge" alt="Skills" />
     </a>
     &nbsp;
     <a href="https://github.com/KALEESWARANS-CYBER00">
@@ -54,8 +54,7 @@ Cybersecurity Analyst, Systems Engineer, and Security Researcher with an enginee
 [SYSTEM TELEMETRY SUMMARY]
 Identity    : KALEESWARAN S
 Discipline  : Cybersecurity Analyst & Systems Engineer
-Endpoint    : kaleeswaran.bcy24@rathinam.in
-Telephone   : +91 6374892220
+Network     : LinkedIn & GitHub Repositories
 Focus Areas : eBPF Telemetry | Vulnerability Research | Security Tooling | Systems Hardening
 Status      : Active & Open for Security Engineering Opportunities
 ```
@@ -223,31 +222,118 @@ Showcasing selected security research, software tooling, and architectural syste
 
 ---
 
-## Core Competencies & Technical Arsenal
+<a id="technical-competencies"></a>
+## Technical Capabilities & Specializations
 
-### 1. Offensive Security & Red Teaming
-- **Vulnerability Research**: OWASP Top 10, Blind SQLi, Cross-Site Scripting, SSRF, IDOR, Broken Authentication
-- **Discovery & Enumeration**: `Nmap`, `Wireshark`, `Masscan`, `Amass`, `Subfinder`, `ffuf`, `Gobuster`
-- **Adversary Emulation**: `Metasploit Framework`, `Hydra`, `John the Ripper`, `Hashcat`, `Impacket`, `BloodHound`
-- **Reverse Engineering**: `Ghidra`, `GDB`, `pwndbg`, `pwntools`, ELF & PE Binary Analysis
+A comprehensive overview of competencies spanning offensive security, systems engineering, cloud architecture, and software development across 10 specialized categories:
 
-### 2. Systems, Infrastructure & Telemetry
+### 1. Cybersecurity
+*Enterprise security posture, comprehensive threat assessment, and adversary defense.*
+
+- **Offensive Security & Red Teaming**: Cybersecurity, Offensive Security, Red Teaming, Penetration Testing (VAPT), Web Application Security, API Security, Network Security, Cloud Security
+- **Systems Defense & Threat Research**: Active Directory Security, Linux Security, Windows Security, Security Assessment, Vulnerability Assessment, Threat Modeling, Security Testing, Security Auditing, Security Research
+
+---
+
+### 2. Offensive Security & Red Teaming
+*Adversary simulation, attack surface discovery, and tactical penetration testing.*
+
+- **Tactical Focus**: Red Teaming, VAPT, Penetration Testing, Web Security, API Security, Network Security, Active Directory Security
+- **Adversary Tradecraft**: Initial Access Techniques, Lateral Movement, Attack Surface Analysis, Security Testing
+
+---
+
+### 3. Exploit Development
+*Vulnerability research, binary exploitation, reverse engineering, and payload engineering.*
+
+- **Exploit & Research Engineering**: Binary Exploitation, Reverse Engineering, Shellcode Development, Payload Development, Privilege Escalation, Vulnerability Research, Web Exploitation, PoC Development
+- **Advanced Persistence & Operations**: Post-Exploitation, Persistence Techniques, Command & Control (C2), Security Automation, CTF (Capture The Flag)
+
+---
+
+### 4. Cloud & AWS
+*Resilient cloud infrastructure, serverless architectures, and defense-in-depth on AWS.*
+
+> **Certification**: AWS Certified Cloud Practitioner • In Progress
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,kali,ubuntu,debian,docker,aws,bash&perline=7" alt="Infrastructure Stack" />
+  <img src="https://skillicons.dev/icons?i=aws&perline=6" alt="AWS Cloud" />
 </p>
 
-- **Host Telemetry**: Linux Kernel process inspection, eBPF logging, Systemd services, SUID privilege escalation
-- **Virtualization & Isolation**: Docker, Container namespaces, Cgroups, Chroot jails
-- **Cloud Security**: AWS IAM, EC2, S3, VPC, CloudTrail, CloudWatch, KMS cryptographic policies
+| AWS Pillar | Services & Technologies |
+| :--- | :--- |
+| **Compute** | EC2, Lambda, ECS, EKS, ECR, Elastic Beanstalk, Auto Scaling |
+| **Storage** | S3, EBS, EFS, AWS Backup |
+| **Database** | RDS, DynamoDB |
+| **Networking** | VPC, Route 53, CloudFront, ELB (Elastic Load Balancing) |
+| **Security** | IAM, KMS, WAF, Shield, ACM, GuardDuty, Security Hub, Secrets Manager, Inspector, Trusted Advisor |
+| **DevOps** | CodeBuild, CodeDeploy, CodePipeline, CodeCommit, CloudFormation |
+| **Monitoring** | CloudWatch, CloudTrail, Systems Manager, AWS Config |
+| **Messaging & APIs**| SQS, SNS, EventBridge, Step Functions, API Gateway |
 
-### 3. Full-Stack & Engineering Tooling
+---
+
+### 5. Security Tools
+*Industry-standard offensive toolkits, network protocol dissectors, and debuggers.*
+
+`Burp Suite` · `Nmap` · `Metasploit` · `Wireshark` · `Ghidra` · `GDB` · `pwndbg` · `Hashcat` · `John the Ripper` · `Hydra` · `sqlmap` · `ffuf` · `Gobuster` · `Netcat` · `Docker` · `Git` · `Linux` · `Bash` · `Python for Security`
+
+---
+
+### 6. Full-Stack Development
+*Modern application development across frontend, backend, APIs, and microservices.*
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,c,cpp,js,ts,react,nextjs,nodejs,express,postgres,mongodb,redis&perline=7" alt="Engineering Stack" />
+  <img src="https://skillicons.dev/icons?i=java,js,ts,python,react,nextjs,nodejs,express,spring,html,css&perline=8" alt="Full Stack" />
 </p>
 
-- **Languages**: Python (Automation & Security), Java (DSA & Enterprise), C/C++ (Systems), Bash, JavaScript, TypeScript
-- **Backend & APIs**: Node.js, Express, Next.js, RESTful microservices, WebSocket channels
-- **Databases & Cache**: PostgreSQL, MySQL, MariaDB, MongoDB, Redis in-memory caching
+- **Core Capabilities**: Full-Stack Web Dev, Java, JavaScript, TypeScript, Python (Basic), React.js, Node.js, Express.js, Spring Boot
+- **Architecture**: REST APIs, Microservices, HTML5, CSS3, OOP, Data Structures & Algorithms
+
+---
+
+### 7. Programming Languages
+*Core compiled, systems, and scripting languages for engineering and automation.*
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=java,js,ts,python,c,cpp,bash&perline=7" alt="Languages" />
+</p>
+
+`Java` · `JavaScript` · `TypeScript` · `Python` · `C` · `C++` · `Bash` · `SQL`
+
+---
+
+### 8. Databases & Data Technologies
+*Relational DBMS, document stores, in-memory caching, and query optimization.*
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis&perline=6" alt="Databases" />
+</p>
+
+- **Engines & Stores**: MySQL, MariaDB, PostgreSQL, MongoDB, Redis
+- **Data Engineering**: Database Design, SQL, NoSQL, Database Optimization
+
+---
+
+### 9. Messaging & Distributed Systems
+*Event-driven architectures, distributed queuing, and scalable asynchronous processing.*
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=kafka&perline=6" alt="Kafka Messaging" />
+</p>
+
+`Apache Kafka` · `Event-Driven Architecture` · `Message Queues` · `Distributed Systems` · `Asynchronous Processing`
+
+---
+
+### 10. DevOps & Engineering
+*Containerization, automated CI/CD pipelines, and secure cloud delivery.*
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,docker,linux&perline=6" alt="DevOps Stack" />
+</p>
+
+`Git` · `GitHub` · `Docker` · `CI/CD` · `Linux` · `REST APIs` · `Microservices` · `Containerization` · `Infrastructure Fundamentals` · `Cloud Deployment` · `Application Security`
 
 ---
 
@@ -278,14 +364,12 @@ Showcasing selected security research, software tooling, and architectural syste
 ---
 
 <a id="direct-channels"></a>
-## Secure Correspondence & Direct Channels
+## Professional Networks & Verified Channels
 
-Direct channels for technical discussions, vulnerability research collaboration, security audits, and full-time security engineering roles:
+Channels for technical discussions, vulnerability research collaboration, security audits, and full-time security engineering roles:
 
-| Channel | Direct Endpoint | Action / Verification |
+| Channel | Platform Reference | Action / Connection |
 | :--- | :--- | :--- |
-| **Official Email** | `kaleeswaran.bcy24@rathinam.in` | [Open Mail Client](mailto:kaleeswaran.bcy24@rathinam.in?subject=Security%20Engineering%20Inquiry) • Verified |
-| **Direct Telephone** | `+91 6374892220` | [Initiate Call](tel:+916374892220) • Verified |
 | **LinkedIn Profile** | `linkedin.com/in/kaleeswarans25` | [Connect on LinkedIn](https://www.linkedin.com/in/kaleeswarans25/) • Professional Network |
 | **Security Repositories** | `github.com/KALEESWARANS-CYBER00` | [Explore GitHub](https://github.com/KALEESWARANS-CYBER00) • Open-Source Work |
 | **Technical Practice** | `tryhackme.com/p/kalees` | [Inspect Profile](https://tryhackme.com/p/kalees) • Top 4% Rank |
@@ -294,7 +378,7 @@ Direct channels for technical discussions, vulnerability research collaboration,
 <br />
 
 <div align="center">
-  <code>SECURE CORRESPONDENCE • PGP AVAILABLE ON REQUEST • RESPONSE SLA &lt; 24H</code>
+  <code>PROFESSIONAL INQUIRIES VIA LINKEDIN • RESPONSE SLA &lt; 24H</code>
   <br /><br />
   <sub>Designed & Engineered by <b>Kaleeswaran S</b> (@KALEESWARANS-CYBER00)</sub>
 </div>
