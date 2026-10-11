@@ -8,8 +8,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-12 sm:py-20 px-4 sm:px-12 lg:px-16 bg-[#09090b] border-t border-white/[0.08] text-xs font-mono text-[#a8a29e]">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <footer className="py-12 sm:py-20 px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 bg-[#09090b] border-t border-white/[0.08] text-xs font-mono text-[#a8a29e] w-full">
+      <div className="w-full space-y-12">
         {/* Top Grid: Identity, Quote, Sitemap, Social Channels */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12">
           {/* Left: Identity & Quote */}
