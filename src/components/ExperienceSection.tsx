@@ -130,9 +130,9 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-16 sm:py-32 px-4 sm:px-12 lg:px-16 bg-[#09090b] relative border-t border-white/[0.07]"
+      className="py-16 sm:py-32 px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 bg-[#09090b] relative border-t border-white/[0.07] w-full"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 mb-12 sm:mb-20">
           <div>
