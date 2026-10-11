@@ -4,6 +4,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { ArrowUpRight } from 'lucide-react';
+import HeroInkReveal from './HeroInkReveal';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -13,6 +14,7 @@ export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroPinRef = useRef<HTMLDivElement>(null);
   const bgWrapperRef = useRef<HTMLDivElement>(null);
+  const portraitImgRef = useRef<HTMLImageElement>(null);
   const textFrame1Ref = useRef<HTMLDivElement>(null);
   const textFrame2Ref = useRef<HTMLDivElement>(null);
 
@@ -158,7 +160,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-[#09090b]">
+    <div ref={containerRef} id="hero" className="relative w-full bg-[#09090b]">
       {/* Pinned Viewport Container */}
       <div
         ref={heroPinRef}
@@ -176,9 +178,15 @@ export default function Hero() {
             style={{ willChange: 'transform, opacity' }}
           >
             <img
+              ref={portraitImgRef}
               src="/hero-portrait.png"
               alt="Kaleeswaran S - Professional Portrait"
               className="w-full h-full object-contain lg:object-cover object-top lg:object-center pt-14 sm:pt-16 lg:pt-0"
+            />
+            {/* Organic Ink-like Cursor Hover Reveal (Color Shift via Blend Mode) */}
+            <HeroInkReveal
+              bgWrapperRef={bgWrapperRef}
+              heroContainerRef={heroPinRef}
             />
           </div>
 
@@ -199,14 +207,14 @@ export default function Hero() {
         {/* ============================================================== */}
         {/* CONTENT STAGE                                                  */}
         {/* ============================================================== */}
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-12 lg:px-16 h-full flex items-center">
+        <div className="relative z-20 w-full px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20 h-full flex items-center">
 
           {/* ============================================================ */}
           {/* FRAME 01: ATTACKER MINDSET × ENGINEER MINDSET                */}
           {/* ============================================================ */}
           <div
             ref={textFrame1Ref}
-            className="absolute inset-x-4 sm:inset-x-12 lg:inset-x-16 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto max-w-3xl flex flex-col items-start drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]"
+            className="absolute inset-x-4 sm:inset-x-8 md:inset-x-12 lg:inset-x-14 xl:inset-x-16 2xl:inset-x-20 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto max-w-3xl flex flex-col items-start drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]"
             style={{ willChange: 'transform, opacity' }}
           >
             {/* Headline: I Think Like an Attacker. I Build Like an Engineer. */}
@@ -276,7 +284,7 @@ export default function Hero() {
           {/* ============================================================ */}
           <div
             ref={textFrame2Ref}
-            className="absolute inset-x-4 sm:inset-x-12 lg:inset-x-16 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center opacity-0 pointer-events-none drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]"
+            className="absolute inset-x-4 sm:inset-x-8 md:inset-x-12 lg:inset-x-14 xl:inset-x-16 2xl:inset-x-20 bottom-4 xs:bottom-6 sm:bottom-10 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center opacity-0 pointer-events-none drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]"
             style={{ willChange: 'transform, opacity' }}
           >
             {/* Left Column Spacer (Desktop) */}
