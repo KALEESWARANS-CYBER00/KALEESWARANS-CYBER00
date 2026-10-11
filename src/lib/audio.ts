@@ -23,7 +23,7 @@ class AudioManager {
     this.initialized = true;
 
     try {
-      this.audio = new Audio('/beats.mp3');
+      this.audio = new Audio('/corporate.mp3');
       this.audio.loop = true;
       this.audio.volume = 0.38;
       this.audio.preload = 'auto';
